@@ -7,7 +7,7 @@
     <name>${project.parent.name}</name>
     <version>${project.parent.version}</version>
     <package>${project.parent.groupId}.${project.parent.artifactId}</package>
-    <author>USER</author>
+    <author>HealthIT</author>
     <description>
         ${project.parent.description}
     </description>
@@ -29,11 +29,8 @@
         <require_module version="1.0.0-SNAPSHOT">
             org.openmrs.module.ehrinventory
         </require_module>
-        <require_module version="2.1.1">
-            org.openmrs.module.kenyaui-api
-        </require_module>
-        <require_module version="17.1.0">
-            org.openmrs.module.kenyaemr-api
+        <require_module version="17.0.4">
+            org.openmrs.module.kenyaemr
         </require_module>
         <require_module version="1.4">
             org.openmrs.module.appui

@@ -23,7 +23,7 @@
 		<constructor-arg value="pharmacyapp.dashboard" />
 		<constructor-arg value="Pharmacy" />
 		<constructor-arg value="pharmacyapp/dashboard.page" />
-		<constructor-arg value="pharmacyapp:apps/cashier.png" />
+		<constructor-arg value="pharmacyapp:apps/pharmacy.jpeg" />
 		<constructor-arg value="610" />
 	</bean>
 
