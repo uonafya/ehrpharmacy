@@ -1,0 +1,62 @@
+.new-patient-header .identifiers {
+	margin-top: 5px;
+}
+.name {
+	color: #f26522;
+}
+#inline-tabs{
+	background: #f9f9f9 none repeat scroll 0 0;
+}
+#breadcrumbs a, #breadcrumbs a:link, #breadcrumbs a:visited {
+	text-decoration: none;
+}
+#expired .show-icon,
+#current .show-icon{
+	display: inline-block;
+	float: right;
+	height: 50px;
+	margin-bottom: -40px;
+	margin-top: 10px;
+}
+#expired .show-icon{
+	background: rgba(0, 0, 0, 0) url("../images/expired-icon.png") no-repeat scroll 0 0 / 100% auto;	
+	width: 115px;
+}
+#current .show-icon{
+	background: rgba(0, 0, 0, 0) url("../images/current-icon.png") no-repeat scroll 0 0 / 100% auto;
+	width: 128px;
+
+}
+.exampler {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	display: block;
+	margin: 65px 0 3px;
+	padding: 10px;
+	position: relative;
+}
+.exampler::after {
+	background: #f9f9f9 none repeat scroll 0 0;
+	border: 1px solid #ddd;
+	color: #969696;
+	content: "Drug Summary";
+	font-size: 12px;
+	font-weight: bold;
+	left: -1px;
+	padding: 5px 10px;
+	position: absolute;
+	top: -29px;
+}
+.exampler div {
+	background: rgba(0, 0, 0, 0) url("../images/drugs-icon.jpg") no-repeat scroll 10px 0 / auto 100%;
+	padding-left: 90px;
+	color: #363463;
+}
+.exampler div span{
+	color: #555;
+	float: left;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	width: 120px;
+}
