@@ -36,6 +36,7 @@
 		<openMRSVersion>1.9.9</openMRSVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<kenyauiVersion>2.1.1</kenyauiVersion>
+		<kenyacoreVersion>2.4.1</kenyacoreVersion>
 	</properties>
 
 	<dependencyManagement>
@@ -55,7 +56,12 @@
 
 			<!-- Begin OpenMRS modules -->
 
-
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>kenyacore-api</artifactId>
+				<version>${kenyacoreVersion}</version>
+				<scope>provided</scope>
+			</dependency>
 			<dependency>
 
 				<groupId>org.openmrs.module</groupId>

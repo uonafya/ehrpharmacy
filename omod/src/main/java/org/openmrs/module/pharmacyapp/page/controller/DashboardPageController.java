@@ -10,7 +10,9 @@ import org.openmrs.module.hospitalcore.model.InventoryStoreRoleRelation;
 import org.openmrs.module.hospitalcore.util.Action;
 import org.openmrs.module.hospitalcore.util.ActionValue;
 import org.openmrs.module.ehrinventory.InventoryService;
-import org.openmrs.module.pharmacyapp.ReferenceApplicationWebConstants.*;
+import org.openmrs.module.kenyaui.annotation.AppPage;
+import org.openmrs.module.pharmacyapp.PharmacyAppConstants;
+import org.openmrs.module.pharmacyapp.ReferenceApplicationWebConstants.ReferenceApplicationWebConstants;
 import org.openmrs.ui.framework.UiUtils;
 import org.openmrs.ui.framework.page.PageModel;
 import org.openmrs.ui.framework.page.PageRequest;
@@ -24,6 +26,7 @@ import java.util.List;
 /**
  * Created by Dennis Henry on 4/15/2016.
  */
+@AppPage(PharmacyAppConstants.APP_PHARMACY)
 public class DashboardPageController {
     public String get(PageModel model,
                       UiSessionContext sessionContext,
