@@ -33,7 +33,7 @@ STOCKBALLANCE={
         });
 
         jq("#returnToDrugList").on("click", function (e) {
-            window.location.href = emr.pageLink("pharmacyapp", "container", {
+            window.location.href = ui.pageLink("pharmacyapp", "container", {
                 "rel": "current-stock"
             });
         });

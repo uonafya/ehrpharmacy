@@ -84,7 +84,7 @@
             this.searchPatient(0, this.pageSize);
         },
         visitaddIssueSlip: function(patientId){
-            window.location.href = emr.pageLink("pharmacyapp", "issueDrug", {
+            window.location.href = ui.pageLink("pharmacyapp", "issueDrug", {
                 "patientId": patientId
             });
         }

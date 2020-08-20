@@ -71,7 +71,7 @@
             };
 
             self.returnToList = function () {
-                window.location.href = emr.pageLink("pharmacyapp", "container", {
+                window.location.href = ui.pageLink("pharmacyapp", "container", {
                     "rel": "issue-to-patient"
                 });
             };
@@ -96,7 +96,7 @@
                     jq.getJSON('${ ui.actionLink("pharmacyapp", "issueDrugAccountList", "processIssueDrugAccount") }', addIssueDrugsData)
                             .success(function (data) {
                                 jq().toastmessage('showNoticeToast', "Save Order Successful!");
-                                window.location.href = emr.pageLink("pharmacyapp", "container", {
+                                window.location.href = ui.pageLink("pharmacyapp", "container", {
                                     "rel": "issue-to-patient"
                                 });
 
@@ -156,7 +156,7 @@
             })
         });
 
-        var addpatientdrugdialog = emr.setupConfirmationDialog({
+        var addpatientdrugdialog = ui.setupConfirmationDialog({
 			dialogOpts: {
 				overlayClose: false,
 				close: true
@@ -293,7 +293,7 @@
 								jq().toastmessage('removeToast', savingMessage);
                                 jq().toastmessage('showSuccessToast', "Save Order Successful!");
                                 //redirect Successful Saving
-                                window.location.href = emr.pageLink("pharmacyapp", "container", {
+                                window.location.href = ui.pageLink("pharmacyapp", "container", {
                                     "rel": "issue-to-patient"
                                 });
 
@@ -308,7 +308,7 @@
                             .success(function (data) {
                                 jq().toastmessage('showNoticeToast', "Save Order Successful!");
                                 //redirect Successful Saving
-                                window.location.href = emr.pageLink("pharmacyapp", "container", {
+                                window.location.href =ui.pageLink("pharmacyapp", "container", {
                                     "rel": "issue-to-patient"
                                 });
 

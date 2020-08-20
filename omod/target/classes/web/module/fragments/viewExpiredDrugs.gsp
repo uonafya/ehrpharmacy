@@ -56,7 +56,7 @@
 
             var item = tests[index];
 
-            var pageLinkEdit = emr.pageLink("pharmacyapp", "viewStockBalanceDetail", {
+            var pageLinkEdit = ui.pageLink("pharmacyapp", "viewStockBalanceDetail", {
                 drugId: item.drug.id,
                 formulationId: item.formulation.id,
                 expiry: 1

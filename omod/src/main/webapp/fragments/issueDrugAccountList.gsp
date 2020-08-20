@@ -18,7 +18,7 @@
 		});
 		
 		jq('#issue-button').click(function(){
-			window.location.href = emr.pageLink("pharmacyapp", "subStoreIssueAccountDrug");
+			window.location.href = ui.pageLink("pharmacyapp", "subStoreIssueAccountDrug");
 		});		
 
         jq("#fromDate-display, #toDate-display").on("change", function () {

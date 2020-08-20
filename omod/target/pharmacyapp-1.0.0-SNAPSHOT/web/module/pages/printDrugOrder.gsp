@@ -164,7 +164,7 @@
                     var savingMessage = jq().toastmessage('showSuccessToast', 'Please wait as Transaction is being Posted');
                 }
 				
-				window.location.href = emr.pageLink ("pharmacyapp", "container", { "rel" : "dispense-drugs"});
+				window.location.href = ui.pageLink ("pharmacyapp", "container", { "rel" : "dispense-drugs"});
             };
 
 			self.printBill = function () {				
@@ -179,7 +179,7 @@
 				
 				var flag = ${flag};				
 				if (flag !== 1) {
-					window.location.href = emr.pageLink ("pharmacyapp", "container", { "rel" : "dispense-drugs"});				
+					window.location.href = ui.pageLink ("pharmacyapp", "container", { "rel" : "dispense-drugs"});
 				}
 			};
 

@@ -21,7 +21,7 @@
             addissuedialog.show();
         });
 
-        var addissuedialog = emr.setupConfirmationDialog({
+        var addissuedialog = ui.setupConfirmationDialog({
 			dialogOpts: {
 				overlayClose: false,
 				close: true
@@ -287,7 +287,7 @@
             };
 
             self.returnToList = function () {
-                window.location.href = emr.pageLink("pharmacyapp", "container", {
+                window.location.href = ui.pageLink("pharmacyapp", "container", {
                     "rel": "issue-to-account"
                 });
             };
@@ -326,7 +326,7 @@
             printWindow.print();
         }
 
-        var addaccountforissueslipdialog = emr.setupConfirmationDialog({
+        var addaccountforissueslipdialog = ui.setupConfirmationDialog({
 			dialogOpts: {
 				overlayClose: false,
 				close: true
@@ -362,7 +362,7 @@
 							printWindow.print();
 							printWindow.close();
 							
-							window.location.href = emr.pageLink("pharmacyapp", "container", {
+							window.location.href = ui.pageLink("pharmacyapp", "container", {
 								"rel": "issue-to-account"
 							});
 

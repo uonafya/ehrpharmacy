@@ -17,7 +17,7 @@
         });
 		
         var indentName = [];
-        var adddrugdialog = emr.setupConfirmationDialog({
+        var adddrugdialog = ui.setupConfirmationDialog({
 			dialogOpts: {
 				overlayClose: false,
 				close: true
@@ -84,7 +84,7 @@
         });
 
 
-        var addnameforindentslipdialog = emr.setupConfirmationDialog({
+        var addnameforindentslipdialog = ui.setupConfirmationDialog({
 			dialogOpts: {
 				overlayClose: false,
 				close: true
@@ -117,7 +117,7 @@
                         jq.getJSON('${ ui.actionLink("pharmacyapp", "subStoreIndentDrug", "saveIndentSlip") }', addDrugsData)
                                 .success(function (data) {
                                     jq().toastmessage('showErrorToast', "Save Order Successful!");
-                                    window.location.href = emr.pageLink("pharmacyapp", "container", {
+                                    window.location.href = ui.pageLink("pharmacyapp", "container", {
                                         "rel": "indent-drugs"
                                     });
 
@@ -156,7 +156,7 @@
 
         });
         jq("#returnToDrugList").on("click", function (e) {
-            window.location.href = emr.pageLink("pharmacyapp", "container", {
+            window.location.href = ui.pageLink("pharmacyapp", "container", {
                 "rel": "indent-drugs"
             });
         });

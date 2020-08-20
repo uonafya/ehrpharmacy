@@ -25,13 +25,13 @@
         }
 
         jq('#issue-button').click(function () {
-            window.location.href = emr.pageLink("pharmacyapp", "subStoreIndentDrug");
+            window.location.href = ui.pageLink("pharmacyapp", "subStoreIndentDrug");
         });
     });//end of doc ready
 
 
     function detailDrugIndentPrint(indentId) {
-        window.location.href = emr.pageLink("pharmacyapp", "indentDrugDetail", {
+        window.location.href = ui.pageLink("pharmacyapp", "indentDrugDetail", {
             "indentId": indentId
         });
     }
@@ -92,12 +92,12 @@
     }
 
     function processDrugIndent(indentId) {
-        window.location.href = emr.pageLink("pharmacyapp", "subStoreDrugProcessIndent", {
+        window.location.href = ui.pageLink("pharmacyapp", "subStoreDrugProcessIndent", {
             "indentId": indentId
         });
     }
     function processSendIndent(indentId) {
-        window.location.href = emr.pageLink("pharmacyapp", "sendDrugIndentToMainStore", {
+        window.location.href = ui.pageLink("pharmacyapp", "sendDrugIndentToMainStore", {
             "indentId": indentId
         });
     }

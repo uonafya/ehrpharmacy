@@ -19,7 +19,7 @@
 		});
     }
     function mainPage() {
-        window.location.href = emr.pageLink("pharmacyapp", "container", {
+        window.location.href = ui.pageLink("pharmacyapp", "container", {
             "rel": "indent-drugs"
         });
     }

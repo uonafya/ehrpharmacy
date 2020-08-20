@@ -73,7 +73,7 @@
 
         var jSonOrders = ${drugOrderListJson};
         var orderList = jSonOrders.simpleObjects;
-        processdrugdialog = emr.setupConfirmationDialog({
+        processdrugdialog = ui.setupConfirmationDialog({
             dialogOpts: {
                 overlayClose: false,
                 close: true
@@ -90,7 +90,7 @@
             }
         });
 
-        confirmdrugdialog = emr.setupConfirmationDialog({
+        confirmdrugdialog = ui.setupConfirmationDialog({
             dialogOpts: {
                 overlayClose: false,
                 close: true
@@ -200,7 +200,7 @@
     });//end of doc ready
 
     function cancelDrugProcess() {
-        window.location.href = emr.pageLink("pharmacyapp", "container", {
+        window.location.href = ui.pageLink("pharmacyapp", "container", {
             "rel": "patients-queue",
             "date": '${date}'
         });
