@@ -51,20 +51,22 @@ public class DashboardPageController {
             }
         }
         InventoryStore store = null;
+        String dateStr = "";
+        List<Action> listSubStoreStatus = new ArrayList<Action>();
         if (srl != null) {
             store = inventoryService.getStoreById(srl.getStoreid());
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-            String dateStr = sdf.format(new Date());
-            model.addAttribute("currentDate", dateStr);
-            model.addAttribute("currentTime", new Date());
+            dateStr = sdf.format(new Date());
+            listSubStoreStatus = ActionValue.getListIndentSubStore();
 
-            List<Action> listSubStoreStatus = ActionValue.getListIndentSubStore();
-            model.addAttribute("listSubStoreStatus", listSubStoreStatus);
-            model.addAttribute("tabId", tabId);
         }
-        else{
+        /*else{
             return "redirect: index.htm";
-        }
+        }*/
+        model.addAttribute("currentDate", dateStr);
+        model.addAttribute("currentTime", new Date());
+        model.addAttribute("listSubStoreStatus", listSubStoreStatus);
+        model.addAttribute("tabId", tabId);
         return null;
     }
 }

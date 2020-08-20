@@ -2,51 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52be932b-ce8d-4084-9f70-af680c2880e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appframework_api_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appframework_api_2_9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appui_api_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appui_api_1_8_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appui_omod_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appui_omod_1_8_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_uiframework_api_3_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_uiframework_api_3_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pharmacyapp-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pharmacyapp-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/pharmacyapp-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/pharmacyapp-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/pharmacyapp-omod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/pharmacyapp-omod.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/PharmacyAppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/PharmacyAppConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/DashboardPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/DashboardPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/container.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/container.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/drugOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/drugOrder.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/indentDrugDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/indentDrugDetail.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrug.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrug.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrugAccountDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrugAccountDetail.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/listOfOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/listOfOrder.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/main.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/main.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/printDrugOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/printDrugOrder.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewCurrentStockBalanceDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewCurrentStockBalanceDetail.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewStockBalanceDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewStockBalanceDetail.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/classes/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/classes/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/pharmacyapp/page/controller/DashboardPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/pharmacyapp/page/controller/DashboardPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/web/module/pages/dashboard.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/pages/dashboard.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.omod" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.omod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/lib/pharmacyapp-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/lib/pharmacyapp-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/moduleApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/org/openmrs/module/pharmacyapp/page/controller/DashboardPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/org/openmrs/module/pharmacyapp/page/controller/DashboardPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/dashboard.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/dashboard.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +105,7 @@
       <workItem from="1597738044357" duration="453000" />
       <workItem from="1597822231770" duration="2090000" />
       <workItem from="1597825378650" duration="9093000" />
-      <workItem from="1597861189812" duration="5945000" />
+      <workItem from="1597861189812" duration="7609000" />
     </task>
     <servers />
   </component>
