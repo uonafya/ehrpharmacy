@@ -52,26 +52,7 @@
 
 <div class="clear"></div>
 <div class="container">
-	<div class="example">
-		<ul id="breadcrumbs">
-			<li>
-				<a href="${ui.pageLink('referenceapplication','home')}">
-				<i class="icon-home small"></i></a>
-			</li>
-			
-			<li>
-				<i class="icon-chevron-right link"></i>
-				Pharmacy Dasboard
-			</li>
-		</ul>
-	</div>
-	
 	<div class="patient-header new-patient-header">
-		<div class="demographics">
-			<h1 class="name" style="border-bottom: 1px solid #ddd;">
-				<span>PHARMACY DASHBOARD &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
-			</h1>
-		</div>
 
 		<div class="identifiers">
 			<em>&nbsp; &nbsp; Current Time:</em>

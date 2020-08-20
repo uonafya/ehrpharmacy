@@ -1,7 +1,7 @@
 <%
     ui.decorateWith("appui", "standardEmrPage", [title: "View Expired Drug Stock"])
 	ui.includeCss("pharmacyapp", "views.css")
-	ui.includeJavascript("billingui", "moment.js")
+	ui.includeJavascript("ehrcashier", "moment.js")
 %>
 
 <script>

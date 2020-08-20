@@ -1,8 +1,8 @@
 <%
     ui.decorateWith("appui", "standardEmrPage", [title: "View Current Stock"])
 	ui.includeCss("pharmacyapp", "views.css")
-	ui.includeJavascript("billingui", "moment.js")
-	ui.includeJavascript("billingui", "jq.print.js")
+	ui.includeJavascript("ehrcashier", "moment.js")
+	ui.includeJavascript("ehrcashier", "jq.print.js")
 %>
 
 <script>

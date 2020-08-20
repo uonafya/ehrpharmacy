@@ -24,7 +24,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by Dennis Henry on 4/15/2016.
+ *
  */
 @AppPage(PharmacyAppConstants.APP_PHARMACY)
 public class DashboardPageController {

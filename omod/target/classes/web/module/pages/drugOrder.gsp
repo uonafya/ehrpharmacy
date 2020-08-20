@@ -1,8 +1,8 @@
 <%
     ui.decorateWith("appui", "standardEmrPage", [title: "Drug Orders"]);
-    ui.includeJavascript("billingui", "knockout-3.4.0.js")
-    ui.includeJavascript("billingui", "moment.js")
-    ui.includeJavascript("billingui", "jq.print.js")
+    ui.includeJavascript("ehrcashier", "knockout-3.4.0.js")
+    ui.includeJavascript("ehrcashier", "moment.js")
+    ui.includeJavascript("ehrcashier", "jq.print.js")
 %>
 
 <script>

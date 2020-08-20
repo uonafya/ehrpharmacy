@@ -2,8 +2,8 @@
     ui.decorateWith("appui", "standardEmrPage", [title: title])	
     ui.includeCss("pharmacyapp", "container.css")
 	
-    ui.includeJavascript("billingui", "moment.js")
-	ui.includeJavascript("billingui", "jq.browser.select.js")
+    ui.includeJavascript("ehrcashier", "moment.js")
+	ui.includeJavascript("ehrcashier", "jq.browser.select.js")
 %>
 
 <style>

@@ -1,6 +1,6 @@
 <%
     ui.decorateWith("appui", "standardEmrPage", [title: "Issue Drug"])
-	ui.includeJavascript("billingui", "jq.print.js")
+	ui.includeJavascript("ehrcashier", "jq.print.js")
 %>
 
 <script>

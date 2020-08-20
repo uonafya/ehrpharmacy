@@ -18,26 +18,11 @@
 
     <!-- Required Modules -->
     <require_modules>
-
-        <require_module version="3.3.1">
-            org.openmrs.module.uiframework
-        </require_module>
-
-        <require_module version="2.0.4">
-            org.openmrs.module.uilibrary
-        </require_module>
-        <require_module version="1.0.0-SNAPSHOT">
-            org.openmrs.module.ehrinventory
-        </require_module>
-        <require_module version="17.0.4">
-            org.openmrs.module.kenyaemr
-        </require_module>
-        <require_module version="1.4">
-            org.openmrs.module.appui
-        </require_module>
-        <!--<require_module version="1.0.1">
-            org.openmrs.module.referenceapplication
-        </require_module>-->
+        <require_module version="${uiframeworkVersion}}">org.openmrs.module.uiframework</require_module>
+        <require_module version="${uilibraryVersion}">org.openmrs.module.uilibrary</require_module>
+        <require_module version="${ehrinventoryVersion}">org.openmrs.module.ehrinventory</require_module>
+        <require_module version="${kenyaemrVersion}">org.openmrs.module.kenyaemr</require_module>
+        <require_module version="${appuiVersion}">org.openmrs.module.appui</require_module>
 
     </require_modules>
     <!-- / Required Modules -->

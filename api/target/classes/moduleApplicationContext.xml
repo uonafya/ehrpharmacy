@@ -6,11 +6,11 @@
 
 	<!-- Add here beans related to the API context -->
 	<bean id= "pharmacyapp.app.dashboard" factory-bean="kenyacore.appFactoryBean" factory-method="createInstance">
-		<constructor-arg value="pharmacyapp.dashboard"/>
+		<constructor-arg value="pharmacyapp.pharmacy"/>
 		<constructor-arg value="Pharmacy"/>
 		<constructor-arg value="pharmacyapp/dashboard.page"/>
 		<constructor-arg value="pharmacyapp:apps/pharmacy.jpeg"/>
-		<constructor-arg value="610"/>
+		<constructor-arg value="2100"/>
 	</bean>
 
 	<!-- Services accessible via Context.getService() -->

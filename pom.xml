@@ -22,9 +22,10 @@
 	</organization>
 
 	<scm>
-		<connection>scm:svn:https://svn.openmrs.org/openmrs-modules/pharmacyapp/trunk/</connection>
-		<developerConnection>scm:svn:https://svn.openmrs.org/openmrs-modules/pharmacyapp/trunk/</developerConnection>
-		<url>https://svn.openmrs.org/openmrs-modules/pharmacyapp/trunk/</url>
+		<connection>scm:git:https://github.com/uonafya/ehrpharmacy.git</connection>
+		<developerConnection>scm:git:https://github.com/uonafya/ehrpharmacy.git</developerConnection>
+		<url>https://github.com/uonafya/ehrpharmacy.git</url>
+		<tag>HEAD</tag>
 	</scm>
 
 	<modules>
@@ -37,6 +38,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<kenyauiVersion>2.1.1</kenyauiVersion>
 		<kenyacoreVersion>2.4.1</kenyacoreVersion>
+		<ehrinventoryVersion>1.0.0-SNAPSHOT</ehrinventoryVersion>
+		<appuiVersion>1.8.0</appuiVersion>
+		<uilibraryVersion>2.0.4</uilibraryVersion>
+		<kenyaemrVersion>17.0.3</kenyaemrVersion>
+		<hospitalcoreVersion>1.0.0-SNAPSHOT</hospitalcoreVersion>
+		<appframeworkVersion>2.9</appframeworkVersion>
+		<uiframeworkVersion>3.11.0</uiframeworkVersion>
 	</properties>
 
 	<dependencyManagement>
@@ -68,7 +76,7 @@
 
 				<artifactId>uiframework-api</artifactId>
 
-				<version>3.8</version>
+				<version>${uiframeworkVersion}</version>
 
 				<scope>provided</scope>
 
@@ -80,7 +88,7 @@
 
 				<artifactId>uilibrary-api</artifactId>
 
-				<version>2.0.4</version>
+				<version>${uilibraryVersion}</version>
 
 				<scope>provided</scope>
 
@@ -92,7 +100,7 @@
 
 				<artifactId>appframework-api</artifactId>
 
-				<version>2.4</version>
+				<version>${appframeworkVersion}</version>
 
 				<scope>provided</scope>
 
@@ -104,29 +112,17 @@
 
 				<artifactId>appui-omod</artifactId>
 
-				<version>1.4</version>
+				<version>${appuiVersion}</version>
 
 				<scope>provided</scope>
 
 			</dependency>
 
-			<!--<dependency>
-
-				<groupId>org.openmrs.module</groupId>
-
-				<artifactId>referenceapplication-omod</artifactId>
-
-				<version>1.0.1</version>
-
-				<scope>provided</scope>
-
-			</dependency>-->
-
 			<dependency>
 
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>hospitalcore-api</artifactId>
-				<version>1.0.0-SNAPSHOT</version>
+				<version>${hospitalcoreVersion}</version>
 				<scope>provided</scope>
 
 			</dependency>
@@ -134,13 +130,13 @@
             <dependency>
                 <groupId>org.openmrs.module</groupId>
                 <artifactId>ehrinventory-api</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>${ehrinventoryVersion}</version>
                 <scope>provided</scope>
             </dependency>
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>kenyaemr-api</artifactId>
-				<version>17.1.0</version>
+				<version>${kenyaemrVersion}</version>
 				<scope>provided</scope>
 			</dependency>
 			<dependency>
@@ -229,7 +225,7 @@
 					<configuration>
 						<noDeploy>true</noDeploy>
 						<flowInitContext>
-							<developBranchName>qa</developBranchName>
+							<developBranchName>master</developBranchName>
 						</flowInitContext>
 					</configuration>
 				</plugin>

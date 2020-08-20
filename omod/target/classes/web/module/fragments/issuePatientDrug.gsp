@@ -1,6 +1,6 @@
 <%
     def props = ["wrapperIdentifier", "names", "age", "gender", "formartedVisitDate", "action"]	
-	ui.includeCss("registration", "onepcssgrid.css")
+	ui.includeCss("ehrcashier", "onepcssgrid.css")
 %>
 
 <script>

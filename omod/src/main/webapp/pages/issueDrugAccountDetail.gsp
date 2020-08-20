@@ -1,15 +1,15 @@
 <%
     ui.decorateWith("appui", "standardEmrPage", [title: "View Drug List Items"])
-    ui.includeCss("billingui", "jquery.dataTables.min.css")
+    ui.includeCss("ehrcashier", "jquery.dataTables.min.css")
 	
-    ui.includeCss("registration", "onepcssgrid.css")
+    ui.includeCss("ehrcashier", "onepcssgrid.css")
     ui.includeCss("pharmacyapp", "container.css")
 
-    ui.includeJavascript("billingui", "moment.js")
-    ui.includeJavascript("billingui", "jq.print.js")
-    ui.includeJavascript("billingui", "jquery.dataTables.min.js")
-    ui.includeJavascript("laboratoryapp", "jq.browser.select.js")
-    ui.includeJavascript("billingui", "jquery.PrintArea.js")
+    ui.includeJavascript("ehrcashier", "moment.js")
+    ui.includeJavascript("ehrcashier", "jq.print.js")
+    ui.includeJavascript("ehrcashier", "jquery.dataTables.min.js")
+    ui.includeJavascript("ehrcashier", "jq.browser.select.js")
+    ui.includeJavascript("ehrcashier", "jquery.PrintArea.js")
 %>
 
 <script>
@@ -105,7 +105,7 @@
 <div id="print">
 	<center class="print-only">		
 		<h2>
-			<img width="100" height="100" align="center" title="OpenMRS" alt="OpenMRS" src="${ui.resourceLink('billingui', 'images/kenya_logo.bmp')}"><br/>
+			<img width="100" height="100" align="center" title="OpenMRS" alt="OpenMRS" src="${ui.resourceLink('ehrcashier', 'images/kenya_logo.bmp')}"><br/>
 			<b>
 				<u>${userLocation}</u>
 			</b>

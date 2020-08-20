@@ -1,12 +1,12 @@
 <%
     ui.decorateWith("appui", "standardEmrPage", [title: "Pharmacy Module"])
 	
-	ui.includeCss("billingui", "jquery.dataTables.min.css")
-    ui.includeCss("registration", "onepcssgrid.css")
+	ui.includeCss("ehrcashier", "jquery.dataTables.min.css")
+    ui.includeCss("ehrcashier", "onepcssgrid.css")
 	
-    ui.includeJavascript("billingui", "moment.js")
-    ui.includeJavascript("billingui", "jquery.dataTables.min.js")
-	ui.includeJavascript("laboratoryapp", "jq.browser.select.js")
+    ui.includeJavascript("ehrcashier", "moment.js")
+    ui.includeJavascript("ehrcashier", "jquery.dataTables.min.js")
+	ui.includeJavascript("ehrcashier", "jq.browser.select.js")
 %>
 
 <head>

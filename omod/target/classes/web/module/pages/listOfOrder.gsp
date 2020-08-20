@@ -1,7 +1,7 @@
 <%
     ui.decorateWith("appui", "standardEmrPage", [title: "List of Orders"]);
 
-    ui.includeJavascript("billingui", "moment.js")
+    ui.includeJavascript("ehrcashier", "moment.js")
 %>
 <script>
     jq(document).ready(function () {

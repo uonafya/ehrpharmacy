@@ -1,7 +1,7 @@
 <%
     ui.decorateWith("appui", "standardEmrPage", [title: "Pharmacy Module"])
 	ui.includeCss("pharmacyapp", "container.css")
-	ui.includeJavascript("billingui", "jq.print.js")
+	ui.includeJavascript("ehrcashier", "jq.print.js")
 %>
 
 <script>
@@ -124,7 +124,7 @@
     <div>
         <center class="print-only">		
 			<h2>
-				<img width="100" height="100" align="center" title="OpenMRS" alt="OpenMRS" src="${ui.resourceLink('billingui', 'images/kenya_logo.bmp')}"><br/>
+				<img width="100" height="100" align="center" title="OpenMRS" alt="OpenMRS" src="${ui.resourceLink('ehrcashier', 'images/kenya_logo.bmp')}"><br/>
 				<b>
 					<u>${userLocation}</u>
 				</b>
@@ -253,7 +253,7 @@
     <div>
         <center class="print-only">		
 			<h2>
-				<img width="100" height="100" align="center" title="OpenMRS" alt="OpenMRS" src="${ui.resourceLink('billingui', 'images/kenya_logo.bmp')}"><br/>
+				<img width="100" height="100" align="center" title="OpenMRS" alt="OpenMRS" src="${ui.resourceLink('ehrcashier', 'images/kenya_logo.bmp')}"><br/>
 				<b>
 					<u>${userLocation}</u>
 				</b>
