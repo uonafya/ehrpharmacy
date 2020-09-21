@@ -16,6 +16,8 @@ import org.openmrs.module.hospitalcore.util.ActionValue;
 import org.openmrs.module.hospitalcore.util.FlagStates;
 import org.openmrs.module.ehrinventory.InventoryService;
 import org.openmrs.module.ehrinventory.util.DateUtils;
+import org.openmrs.module.kenyaui.annotation.AppPage;
+import org.openmrs.module.pharmacyapp.PharmacyAppConstants;
 import org.openmrs.module.pharmacyapp.ReferenceApplicationWebConstants.ReferenceApplicationWebConstants;
 import org.openmrs.ui.framework.SimpleObject;
 import org.openmrs.ui.framework.UiUtils;
@@ -33,8 +35,9 @@ import java.util.Locale;
 import java.util.logging.Logger;
 
 /**
- * Created by Francis Githae on 3/31/16.
+ *
  */
+@AppPage(PharmacyAppConstants.APP_PHARMACY)
 public class DrugOrderPageController {
     private final static Logger logger = Logger.getLogger(DrugOrderPageController.class.getName());
 

@@ -10,6 +10,8 @@ import org.openmrs.module.appui.UiSessionContext;
 import org.openmrs.module.hospitalcore.model.InventoryStoreDrugIndent;
 import org.openmrs.module.hospitalcore.util.ActionValue;
 import org.openmrs.module.ehrinventory.InventoryService;
+import org.openmrs.module.kenyaui.annotation.AppPage;
+import org.openmrs.module.pharmacyapp.PharmacyAppConstants;
 import org.openmrs.module.pharmacyapp.ReferenceApplicationWebConstants.ReferenceApplicationWebConstants;
 import org.openmrs.ui.framework.UiUtils;
 import org.openmrs.ui.framework.page.PageModel;
@@ -21,6 +23,7 @@ import java.util.logging.Logger;
 /**
  * Functional Controller for sending a drug back to main store from the pharmacy
  */
+@AppPage(PharmacyAppConstants.APP_PHARMACY)
 public class SendDrugIndentToMainStorePageController {
 
     private static final Logger logger = Logger.getLogger(SendDrugIndentToMainStorePageController.class.getName());

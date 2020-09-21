@@ -10,6 +10,8 @@ import org.openmrs.module.hospitalcore.util.ActionValue;
 import org.openmrs.module.hospitalcore.util.FlagStates;
 import org.openmrs.module.ehrinventory.InventoryService;
 import org.openmrs.module.ehrinventory.util.DateUtils;
+import org.openmrs.module.kenyaui.annotation.AppPage;
+import org.openmrs.module.pharmacyapp.PharmacyAppConstants;
 import org.openmrs.module.pharmacyapp.ReferenceApplicationWebConstants.ReferenceApplicationWebConstants;
 import org.openmrs.ui.framework.SimpleObject;
 import org.openmrs.ui.framework.UiUtils;
@@ -23,9 +25,9 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author Stanslaus Odhiambo
- *         Created on 4/20/2016.
+ *
  */
+@AppPage(PharmacyAppConstants.APP_PHARMACY)
 public class PrintDrugOrderPageController {
 
     public void get(@RequestParam(value = "issueId", required = false) Integer issueId,

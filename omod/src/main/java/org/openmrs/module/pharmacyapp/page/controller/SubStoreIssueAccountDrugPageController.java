@@ -5,6 +5,8 @@ import org.openmrs.module.appui.UiSessionContext;
 import org.openmrs.module.hospitalcore.model.InventoryDrug;
 import org.openmrs.module.hospitalcore.model.InventoryDrugCategory;
 import org.openmrs.module.ehrinventory.InventoryService;
+import org.openmrs.module.kenyaui.annotation.AppPage;
+import org.openmrs.module.pharmacyapp.PharmacyAppConstants;
 import org.openmrs.module.pharmacyapp.ReferenceApplicationWebConstants.ReferenceApplicationWebConstants;
 import org.openmrs.ui.framework.SimpleObject;
 import org.openmrs.ui.framework.UiUtils;
@@ -16,9 +18,9 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author Stanslaus Odhiambo
- *         Created on 4/20/2016.
+ *
  */
+@AppPage(PharmacyAppConstants.APP_PHARMACY)
 public class SubStoreIssueAccountDrugPageController {
     public void get(@RequestParam(value = "categoryId", required = false) Integer categoryId,
                     PageModel model,

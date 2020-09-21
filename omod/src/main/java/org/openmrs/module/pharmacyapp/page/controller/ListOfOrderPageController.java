@@ -8,6 +8,8 @@ import org.openmrs.module.hospitalcore.HospitalCoreService;
 import org.openmrs.module.hospitalcore.model.OpdDrugOrder;
 import org.openmrs.module.hospitalcore.model.PatientSearch;
 import org.openmrs.module.ehrinventory.InventoryService;
+import org.openmrs.module.kenyaui.annotation.AppPage;
+import org.openmrs.module.pharmacyapp.PharmacyAppConstants;
 import org.openmrs.module.pharmacyapp.ReferenceApplicationWebConstants.ReferenceApplicationWebConstants;
 import org.openmrs.ui.framework.UiUtils;
 import org.openmrs.ui.framework.page.PageModel;
@@ -21,8 +23,9 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by qqnarf on 3/29/16.
+ *
  */
+@AppPage(PharmacyAppConstants.APP_PHARMACY)
 public class ListOfOrderPageController {
     public void get(PageModel pageModel,
                     UiSessionContext sessionContext,

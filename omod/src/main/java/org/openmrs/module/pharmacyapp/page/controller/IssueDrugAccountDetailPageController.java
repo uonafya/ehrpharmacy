@@ -6,6 +6,8 @@ import org.openmrs.module.appui.UiSessionContext;
 import org.openmrs.module.ehrinventory.InventoryService;
 import org.openmrs.module.ehrinventory.model.InventoryStoreDrugAccountDetail;
 
+import org.openmrs.module.kenyaui.annotation.AppPage;
+import org.openmrs.module.pharmacyapp.PharmacyAppConstants;
 import org.openmrs.module.pharmacyapp.ReferenceApplicationWebConstants.ReferenceApplicationWebConstants;
 import org.openmrs.ui.framework.UiUtils;
 import org.openmrs.ui.framework.page.PageModel;
@@ -17,8 +19,9 @@ import java.util.List;
 
 
 /**
- * Created by USER on 4/6/2016.
+ *
  */
+@AppPage(PharmacyAppConstants.APP_PHARMACY)
 public class IssueDrugAccountDetailPageController {
 
     public void get (
