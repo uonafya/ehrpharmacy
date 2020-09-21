@@ -190,7 +190,7 @@ th:last-child {
         <div class="example">
             <ul id="breadcrumbs">
                 <li>
-                    <a href="${ui.pageLink('referenceapplication', 'home')}">
+                    <a href="${ui.pageLink('kenyaemr', 'userHome')}">
                         <i class="icon-home small"></i></a>
                 </li>
 
