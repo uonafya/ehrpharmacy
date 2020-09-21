@@ -3,21 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="52be932b-ce8d-4084-9f70-af680c2880e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ContainerPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ContainerPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/indentDrugList.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/indentDrugList.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/issueDrugAccountList.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/issueDrugAccountList.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/issuePatientDrug.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/issuePatientDrug.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewDrugStock.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewDrugStock.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewExpiredDrugs.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewExpiredDrugs.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/container.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/container.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/dashboard.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/dashboard.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/drugOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/drugOrder.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/indentDrugDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/indentDrugDetail.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrug.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrug.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrugAccountDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrugAccountDetail.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/listOfOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/listOfOrder.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/main.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/main.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/printDrugOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/printDrugOrder.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/subStoreDrugProcessIndent.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/subStoreDrugProcessIndent.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/subStoreIndentDrug.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/subStoreIndentDrug.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/subStoreIssueAccountDrug.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/subStoreIssueAccountDrug.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewCurrentStockBalanceDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewCurrentStockBalanceDetail.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewStockBalanceDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewStockBalanceDetail.gsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/omod/src/main/webapp/resources/images/apps" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ipdapp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -105,7 +105,10 @@
       <workItem from="1597738044357" duration="453000" />
       <workItem from="1597822231770" duration="2090000" />
       <workItem from="1597825378650" duration="9093000" />
-      <workItem from="1597861189812" duration="13087000" />
+      <workItem from="1597861189812" duration="13978000" />
+      <workItem from="1599455010475" duration="1504000" />
+      <workItem from="1600695487663" duration="89000" />
+      <workItem from="1600695613247" duration="1566000" />
     </task>
     <servers />
   </component>
@@ -125,6 +128,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="367" y="234" width="622" height="325" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1366.741@0.27.1366.741" timestamp="1597666046049" />
+    <state x="780" y="297" key="FileChooserDialogImpl" timestamp="1600704677884">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="780" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1600704677884" />
     <state x="216" y="54" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1597672545268">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -147,10 +154,10 @@
     </state>
     <state x="473" y="127" width="893" height="538" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1597337623011" />
     <state x="365" y="172" width="1939" height="597" key="find.popup/0.27.2966.873@0.27.2966.873" timestamp="1597841912191" />
-    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1597929993389">
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1600704628225">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1597929993389" />
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1600704628225" />
     <state x="231" y="81" width="893" height="630" key="spring file set editor" timestamp="1597666399840">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

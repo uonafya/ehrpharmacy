@@ -23,19 +23,19 @@
         <require_module version="${ehrinventoryVersion}">org.openmrs.module.ehrinventory</require_module>
         <require_module version="${kenyaemrVersion}">org.openmrs.module.kenyaemr</require_module>
         <require_module version="${appuiVersion}">org.openmrs.module.appui</require_module>
-        <require_module>org.openmrs.module.ehrcashier</require_module>
+        <require_module>org.openmrs.module.ehrconfigs</require_module>
 
     </require_modules>
     <!-- / Required Modules -->
 
     <!-- Module Activator -->
-    <activator>${project.parent.groupId}.${project.parent.artifactId}.PharmacyAppActivator</activator>
+    <activator>org.openmrs.module.pharmacyapp.PharmacyAppActivator</activator>
 
 
     <!-- Adds link to admin page -->
     <extension>
         <point>org.openmrs.admin.list</point>
-        <class>${project.parent.groupId}.${project.parent.artifactId}.extension.html.AdminList</class>
+        <class>org.openmrs.module.pharmacyapp.extension.html.AdminList</class>
     </extension>
 
     <!-- Maps hibernate file's, if present -->
