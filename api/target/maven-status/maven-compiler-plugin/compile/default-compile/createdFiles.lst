@@ -1,8 +1,0 @@
-org/openmrs/module/pharmacyapp/api/db/PharmacyAppDAO.class
-org/openmrs/module/pharmacyapp/PharmacyApp.class
-org/openmrs/module/pharmacyapp/api/PharmacyAppService.class
-org/openmrs/module/pharmacyapp/StoreSingleton.class
-org/openmrs/module/pharmacyapp/PharmacyAppActivator.class
-org/openmrs/module/pharmacyapp/api/db/hibernate/HibernatePharmacyAppDAO.class
-org/openmrs/module/pharmacyapp/api/impl/PharmacyAppServiceImpl.class
-org/openmrs/module/pharmacyapp/PatientWrapper.class
