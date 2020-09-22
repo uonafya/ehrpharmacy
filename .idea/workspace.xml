@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="52be932b-ce8d-4084-9f70-af680c2880e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/DrugOrderPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/DrugOrderPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/IndentDrugDetailPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/IndentDrugDetailPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/IssueDrugAccountDetailPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/IssueDrugAccountDetailPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/IssueDrugPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/IssueDrugPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ListOfOrderPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ListOfOrderPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/PrintDrugOrderPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/PrintDrugOrderPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/SendDrugIndentToMainStorePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/SendDrugIndentToMainStorePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/SubStoreDrugProcessIndentPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/SubStoreDrugProcessIndentPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/SubStoreIndentDrugPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/SubStoreIndentDrugPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/SubStoreIssueAccountDrugPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/SubStoreIssueAccountDrugPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ViewCurrentStockBalanceDetailPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ViewCurrentStockBalanceDetailPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ViewStockBalanceDetailPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ViewStockBalanceDetailPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/main.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/main.gsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +44,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../inventory" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -108,7 +97,8 @@
       <workItem from="1600695487663" duration="89000" />
       <workItem from="1600695613247" duration="1935000" />
       <workItem from="1600706054853" duration="1110000" />
-      <workItem from="1600708822061" duration="249000" />
+      <workItem from="1600708822061" duration="447000" />
+      <workItem from="1600755425489" duration="1467000" />
     </task>
     <servers />
   </component>
@@ -128,10 +118,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="367" y="234" width="622" height="325" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1366.741@0.27.1366.741" timestamp="1597666046049" />
-    <state x="780" y="297" key="FileChooserDialogImpl" timestamp="1600707162343">
+    <state x="780" y="297" key="FileChooserDialogImpl" timestamp="1600771030193">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="780" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1600707162343" />
+    <state x="780" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1600771030193" />
     <state x="216" y="54" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1597672545268">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -154,10 +144,10 @@
     </state>
     <state x="473" y="127" width="893" height="538" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1597337623011" />
     <state x="365" y="172" width="1939" height="597" key="find.popup/0.27.2966.873@0.27.2966.873" timestamp="1597841912191" />
-    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1600704628225">
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1600772578434">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1600704628225" />
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1600772578434" />
     <state x="231" y="81" width="893" height="630" key="spring file set editor" timestamp="1597666399840">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

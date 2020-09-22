@@ -1,6 +1,7 @@
 <%
     ui.decorateWith("appui", "standardEmrPage", [title: "Pharmacy Module"])
 
+	ui.includeJavascript("ehrconfigs", "moment.js")
 	ui.includeJavascript("ehrconfigs", "jquery-1.12.4.min.js")
 	ui.includeJavascript("ehrconfigs", "jquery-ui-1.9.2.custom.min.js")
 	ui.includeJavascript("ehrconfigs", "underscore-min.js")
