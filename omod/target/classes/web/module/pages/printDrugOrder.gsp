@@ -1,5 +1,5 @@
 <%
-    ui.decorateWith("appui", "standardEmrPage", [title: "Print Order"])
+	ui.decorateWith("kenyaemr", "standardPage")
 	ui.includeJavascript("ehrcashier", "jq.print.js")
 	ui.includeJavascript("ehrconfigs", "jquery-1.12.4.min.js")
 	ui.includeJavascript("ehrconfigs", "jquery-ui-1.9.2.custom.min.js")
