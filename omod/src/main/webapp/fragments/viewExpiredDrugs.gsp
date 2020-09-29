@@ -188,21 +188,7 @@
 		
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div id="expiry-list" style="display: block; margin-top:3px;">
+<div id="expiry-list" style="display: block; margin-top:3px;">
         <div role="grid" class="dataTables_wrapper" id="expiry-list-table_wrapper">
 
         </div>

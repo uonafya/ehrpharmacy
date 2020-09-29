@@ -1,4 +1,5 @@
 <%
+	ui.decorateWith("kenyaemr", "standardPage")
 	ui.includeCss("pharmacyapp", "views.css")
 	ui.includeJavascript("ehrcashier", "jq.print.js")
 	ui.includeJavascript("ehrconfigs", "jquery-ui-1.9.2.custom.min.js")

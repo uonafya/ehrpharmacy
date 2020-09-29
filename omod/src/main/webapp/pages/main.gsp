@@ -1,6 +1,5 @@
 <%
 	ui.decorateWith("kenyaemr", "standardPage")
-
 	ui.includeJavascript("ehrconfigs", "moment.js")
 	ui.includeJavascript("ehrconfigs", "jquery-ui-1.9.2.custom.min.js")
 	ui.includeJavascript("ehrconfigs", "underscore-min.js")

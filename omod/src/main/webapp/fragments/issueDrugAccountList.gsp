@@ -1,5 +1,5 @@
 <%
-    ui.includeJavascript("ehrcashier", "moment.js")
+    ui.includeJavascript("ehrconfigs", "moment.js")
 %>
 
 <script>

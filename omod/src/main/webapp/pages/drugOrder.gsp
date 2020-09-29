@@ -906,7 +906,7 @@
         <center>
 
             <img width="100" height="100" align="center" title="OpenMRS" alt="OpenMRS"
-                 src="${ui.resourceLink('billingui', 'images/kenya_logo.bmp')}">
+                 src="${ui.resourceLink('ehrcashier', 'images/kenya_logo.bmp')}">
         </center>
 
         <h2>

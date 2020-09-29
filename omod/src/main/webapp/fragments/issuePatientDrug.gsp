@@ -1,6 +1,6 @@
 <%
     def props = ["wrapperIdentifier", "names", "age", "gender", "formartedVisitDate", "action"]	
-	ui.includeCss("ehrcashier", "onepcssgrid.css")
+	ui.includeCss("ehrconfigs", "onepcssgrid.css")
 %>
 
 <script>
@@ -419,7 +419,7 @@
 		<input autocomplete="off" placeholder="Search by Name / Identifier / Receipt Number" id="searchPhrase" style="float:left; width:70%; padding:6px 10px -1px; height: 38px!important" onkeyup="ADVSEARCH.startSearch(event);">
 			   
 		<img id="ajaxLoader" style="display:none; float:left; margin: 3px -4%;"
-			 src="/openmrs/ms/uiframework/resource/registration/images/ajax-loader.gif"/>
+			 src="/openmrs/ms/uiframework/resource/ehrconfigs/images/ajax-loader.gif"/>
 			 <div class="info-section">
 				
 
@@ -540,6 +540,7 @@
 		</div>
 	</form>
 
+
 </div>
 
 
@@ -552,7 +553,7 @@
                aria-describedby="patient-search-results-table_info">
             <thead>
             <tr role="row">
-				<th style="width: 5px;"		>#</th>
+				<th style="width: 5px;"	>#</th>
                 <th style="width: 220px;"	>Identifier</th>
                 <th width="*"				>Name</th>
                 <th style="width: 60px;"	>Age</th>
