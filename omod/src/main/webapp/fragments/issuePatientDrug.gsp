@@ -155,7 +155,7 @@
 			var rowsClass 	= '';
 			var gender 		= item.gender;
 			var lastVisit 	= moment(item.formartedVisitDate, 'DD/MM/YYYY HH:mm:ss').fromNow();
-			var names 		= stringReplace(item.names);
+			var names 		= strReplace(item.names);
 			var visit 		= moment(item.formartedVisitDate,'DD/MM/YYYY HH:mm:ss');
 			var today 		= moment();
 
