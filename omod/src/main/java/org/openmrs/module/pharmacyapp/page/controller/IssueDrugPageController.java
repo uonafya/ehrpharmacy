@@ -124,7 +124,7 @@ public class IssueDrugPageController {
         model.addAttribute("pharmacist", Context.getAuthenticatedUser().getGivenName());
         model.addAttribute("userLocation", Context.getAdministrationService().getGlobalProperty("hospital.location_user"));
         model.addAttribute("paymentCategory", paymentCategory);
-        model.addAttribute("paymentCategory", paymentSubCategory);
+        model.addAttribute("paymentSubCategory", paymentSubCategory);
     }
 
 
