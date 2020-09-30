@@ -32,7 +32,7 @@
             addissuedialog.show();
         });
 
-        var addissuedialog = ui.setupConfirmationDialog({
+        var addissuedialog = emr.setupConfirmationDialog({
 			dialogOpts: {
 				overlayClose: false,
 				close: true
@@ -337,7 +337,7 @@
             printWindow.print();
         }
 
-        var addaccountforissueslipdialog = ui.setupConfirmationDialog({
+        var addaccountforissueslipdialog = emr.setupConfirmationDialog({
 			dialogOpts: {
 				overlayClose: false,
 				close: true

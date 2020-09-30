@@ -1,6 +1,7 @@
 <%
     def props = ["wrapperIdentifier", "names", "age", "gender", "formartedVisitDate", "action"]	
 	ui.includeCss("ehrconfigs", "onepcssgrid.css")
+	ui.includeJavascript("ehrconfigs", "moment.js")
 %>
 
 <script>
