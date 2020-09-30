@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52be932b-ce8d-4084-9f70-af680c2880e3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/IssueDrugPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/IssueDrugPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/pharmacyapp-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/pharmacyapp-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/classes/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.omod" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.omod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/lib/pharmacyapp-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/lib/pharmacyapp-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +107,7 @@
       <workItem from="1601297668646" duration="2937000" />
       <workItem from="1601315927500" duration="18000" />
       <workItem from="1601387707901" duration="1821000" />
-      <workItem from="1601459876667" duration="5488000" />
+      <workItem from="1601459876667" duration="5618000" />
     </task>
     <servers />
   </component>
