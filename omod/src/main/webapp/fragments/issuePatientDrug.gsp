@@ -161,8 +161,6 @@
 
 			var hours 	= Math.round(moment.duration(today - visit).asHours());
 			
-			console.log(hours +'hrs - >'+ lastVisit);
-			
 			if (hours <= 24){
 				rowsClass	= 'recent-seen';
 				names	   += ' <span class="recent-lozenge">Within 24hrs</span>'

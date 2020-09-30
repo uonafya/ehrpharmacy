@@ -100,26 +100,31 @@ public class IssueDrugPageController {
         }
 
         List<PersonAttribute> pas = hcs.getPersonAttributes(patient.getId());
-
+        String paymentCategory = "";
+        String paymentSubCategory = "";
         for (PersonAttribute pa : pas) {
             PersonAttributeType attributeType = pa.getAttributeType();
             PersonAttributeType personAttributePCT = hcs.getPersonAttributeTypeByName("Paying Category Type");
             PersonAttributeType personAttributeNPCT = hcs.getPersonAttributeTypeByName("Non-Paying Category Type");
             PersonAttributeType personAttributeSSCT = hcs.getPersonAttributeTypeByName("Special Scheme Category Type");
-            if (attributeType.getPersonAttributeTypeId() == personAttributePCT.getPersonAttributeTypeId()) {
-                model.addAttribute("paymentCategory", "PAYING");
-                model.addAttribute("paymentSubCategory", pa.getValue());
-            } else if (attributeType.getPersonAttributeTypeId() == personAttributeNPCT.getPersonAttributeTypeId()) {
-                model.addAttribute("paymentCategory", "NON-PAYING");
-                model.addAttribute("paymentSubCategory", pa.getValue());
-            } else if (attributeType.getPersonAttributeTypeId() == personAttributeSSCT.getPersonAttributeTypeId()) {
-                model.addAttribute("paymentCategory", "SPECIAL SCHEMES");
-                model.addAttribute("paymentSubCategory", pa.getValue());
+
+
+            if (attributeType.getPersonAttributeTypeId().equals(personAttributePCT.getPersonAttributeTypeId())) {
+                paymentCategory = "PAYING";
+                paymentSubCategory = pa.getValue();
+            } else if (attributeType.getPersonAttributeTypeId().equals(personAttributeNPCT.getPersonAttributeTypeId())) {
+                paymentCategory = "NON-PAYING";
+                paymentSubCategory = pa.getValue();
+            } else if (attributeType.getPersonAttributeTypeId().equals(personAttributeSSCT.getPersonAttributeTypeId())) {
+                paymentCategory = "SPECIAL SCHEMES";
+                paymentSubCategory = pa.getValue();
             }
         }
 
         model.addAttribute("pharmacist", Context.getAuthenticatedUser().getGivenName());
         model.addAttribute("userLocation", Context.getAdministrationService().getGlobalProperty("hospital.location_user"));
+        model.addAttribute("paymentCategory", paymentCategory);
+        model.addAttribute("paymentCategory", paymentSubCategory);
     }
 
 
