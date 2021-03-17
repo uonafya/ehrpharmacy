@@ -1,3 +1,10 @@
+<style>
+a:link {
+	color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+</style>
 <script>
 	jq(function () {
 		getStockList();
