@@ -82,7 +82,7 @@
 
         var jSonOrders = ${drugOrderListJson};
         var orderList = jSonOrders.simpleObjects;
-        processdrugdialog = ui.setupConfirmationDialog({
+        processdrugdialog = emr.setupConfirmationDialog({
             dialogOpts: {
                 overlayClose: false,
                 close: true
@@ -99,7 +99,8 @@
             }
         });
 
-        confirmdrugdialog = ui.setupConfirmationDialog({
+
+        confirmdrugdialog = emr.setupConfirmationDialog({
             dialogOpts: {
                 overlayClose: false,
                 close: true
