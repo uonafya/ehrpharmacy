@@ -21,6 +21,12 @@
         jq('#agename').html('${patient.age} years ('+ moment('${patient.birthdate}').format('DD,MMM YYYY') +')');
         jq('#lstdate').html('Last Visit: '+ moment('${previousVisit}').format('DD, MMM YYYY'));
     });
+
+	function stringReplace(word) {
+		var res = word.replace("[", "");
+		res=res.replace("]","");
+		return res;
+	}
 </script>
 
 <style>
