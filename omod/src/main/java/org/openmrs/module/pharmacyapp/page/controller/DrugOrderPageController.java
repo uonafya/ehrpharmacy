@@ -81,7 +81,7 @@ public class DrugOrderPageController {
             doctor = drugOrderList.get(0).getCreator().getGivenName();
         }
 
-        model.addAttribute("patientCategory", patient.getAttribute(53));
+        model.addAttribute("patientCategory", patient.getAttribute(Context.getPersonService().getPersonAttributeTypeByUuid("09cd268a-f0f5-11ea-99a8-b3467ddbf779")));
         model.addAttribute("previousVisit", hospitalCoreService.getLastVisitTime(patient));
         model.addAttribute("patientSearch", patientSearch);
         model.addAttribute("patientType", patientType);
@@ -183,7 +183,7 @@ public class DrugOrderPageController {
             transaction.setTypeTransaction(ActionValue.TRANSACTION[1]);
             transaction.setCreatedOn(date);
             //transaction.setPaymentMode(paymentMode);
-            transaction.setPaymentCategory(patient.getAttribute(53).getValue());
+            transaction.setPaymentCategory(patient.getAttribute(Context.getPersonService().getPersonAttributeTypeByUuid("09cd268a-f0f5-11ea-99a8-b3467ddbf779")).getValue());
             transaction.setCreatedBy(Context.getAuthenticatedUser().getGivenName());
 
             transaction = inventoryService.saveStoreDrugTransaction(transaction);

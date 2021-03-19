@@ -55,7 +55,7 @@ public class ListOfOrderPageController {
         pageModel.addAttribute("patientSearch", patientSearch);
         pageModel.addAttribute("listOfOrders", listOfOrders);
         pageModel.addAttribute("previousVisit",hospitalCoreService.getLastVisitTime(patient));
-        pageModel.addAttribute("patientCategory", patient.getAttribute(53));
+        pageModel.addAttribute("patientCategory", patient.getAttribute(Context.getPersonService().getPersonAttributeTypeByUuid("09cd268a-f0f5-11ea-99a8-b3467ddbf779")));
         //model.addAttribute("serviceOrderSize", serviceOrderList.size());
         pageModel.addAttribute("patientId", patient.getPatientId());
         pageModel.addAttribute("date", dateStr);
