@@ -76,7 +76,7 @@ public class IssueDrugPageController {
         model.addAttribute("date", new Date());
         model.addAttribute("patientId", patientId);
         model.addAttribute("identifier", patient.getPatientIdentifier());
-        model.addAttribute("category", patient.getAttribute(14));
+        model.addAttribute("category", patient.getAttribute(Context.getPersonService().getPersonAttributeTypeByUuid("09cd268a-f0f5-11ea-99a8-b3467ddbf779")));
         model.addAttribute("age", patient.getAge());
         model.addAttribute("birthdate", patient.getBirthdate());
         model.addAttribute("lastVisit", hcs.getLastVisitTime(patient));
