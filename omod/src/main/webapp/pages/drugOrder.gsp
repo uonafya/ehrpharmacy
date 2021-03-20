@@ -560,6 +560,11 @@
 	.print-only{
 		display: none;
 	}
+	a:link {
+		color: blue;
+		text-decoration: none;
+		cursor: pointer;
+	}
 </style>
 
 <div class="clear"></div>

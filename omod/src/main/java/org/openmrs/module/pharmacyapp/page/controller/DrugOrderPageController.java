@@ -151,6 +151,7 @@ public class DrugOrderPageController {
         Date date = new Date();
         Integer formulationId = null;
         String frequencyName = null;
+        String formattedFrequencyName = null;
         String comments = null;
         Integer quantity = null;
         Integer noOfDays = null;
@@ -195,6 +196,7 @@ public class DrugOrderPageController {
 
             for (int i = 0; i < orders.length(); i++) {
                 JSONObject incomingItem = orders.getJSONObject(i);
+                System.out.println("incomingItem"+incomingItem);
                 try{
                     noOfDays = Integer.parseInt(incomingItem.getString("noOfDays"));
                     listOfDrugQuantity = Integer.parseInt(incomingItem.getString("listOfDrugQuantity"));
@@ -205,10 +207,18 @@ public class DrugOrderPageController {
                 }catch (Exception e){
                     logger.info(e.getMessage());
                 }
+                    if(frequencyName.contains("+"))
+                    {
+                        formattedFrequencyName = frequencyName.replace("+", " ");
+                    }
+                    else
+                    {
+                        formattedFrequencyName = frequencyName;
+                    }
 
                 InventoryCommonService inventoryCommonService = Context.getService(InventoryCommonService.class);
-                Concept fCon = Context.getConceptService().getConcept(frequencyName);
-                if (quantity != 0) {
+                Concept fCon = Context.getConceptService().getConcept(formattedFrequencyName);
+                if (quantity != 0 && quantity != null) {
                     InventoryDrugFormulation inventoryDrugFormulation = inventoryCommonService.getDrugFormulationById(formulationId);
                     InventoryStoreDrugPatientDetail pDetail = new InventoryStoreDrugPatientDetail();
                     InventoryStoreDrugTransactionDetail inventoryStoreDrugTransactionDetail = inventoryService.getStoreDrugTransactionDetailById(listOfDrugQuantity);
