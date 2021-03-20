@@ -2,7 +2,13 @@
     def props = ["identifier", "fullname", "age", "gender","action"]
 	ui.includeJavascript("ehrconfigs", "moment.js")
 %>
-
+<style>
+a:link {
+	color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+</style>
 <script>
     jq(function () {
         jq("#getOrders").on("click", function () {

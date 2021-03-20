@@ -102,6 +102,11 @@
 		background: #fff799 none repeat scroll 0 0 !important;
 		color: #000 !important;
 	}
+	a:link {
+		color: blue;
+		text-decoration: none;
+		cursor: pointer;
+	}
 </style>
 
 <div class="clear"></div>

@@ -4,6 +4,7 @@
 
 	ui.includeJavascript("ehrconfigs", "jquery-ui-1.9.2.custom.min.js")
 	ui.includeJavascript("ehrconfigs", "moment.js")
+	ui.includeJavascript("ehrcashier", "moment.js")
 	ui.includeJavascript("ehrconfigs", "underscore-min.js")
 	ui.includeJavascript("ehrconfigs", "knockout-3.4.0.js")
 	ui.includeJavascript("ehrconfigs", "emr.js")
@@ -17,10 +18,10 @@
 %>
 
 <style>
-	#modal-overlay {
-		background: #000 none repeat scroll 0 0;
-		opacity: 0.4 !important;
-	}
+	/*#modal-overlay {*/
+	/*	background: #000 none repeat scroll 0 0;*/
+	/*	opacity: 0.4 !important;*/
+	/*}*/
 </style>
 
 

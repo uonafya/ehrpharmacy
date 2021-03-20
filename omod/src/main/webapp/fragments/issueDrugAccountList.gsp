@@ -2,6 +2,7 @@
     ui.includeJavascript("ehrconfigs", "moment.js")
 %>
 
+
 <script>
     jq(function () {
         var date = jq("#referred-date-field").val();
@@ -151,6 +152,12 @@
 		text-align: center;
 		width: 70px;
 	}
+
+	 a:link {
+		 color: blue;
+		 text-decoration: none;
+		 cursor: pointer;
+	 }
 </style>
 
 <div class="clear"></div>

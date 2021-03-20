@@ -4,6 +4,8 @@
     ui.includeJavascript("ehrconfigs", "underscore-min.js")
     ui.includeJavascript("ehrconfigs", "knockout-3.4.0.js")
     ui.includeJavascript("ehrconfigs", "emr.js")
+    ui.includeJavascript("ehrconfigs", "moment.js")
+    ui.includeJavascript("ehrcashier", "moment.js")
     ui.includeCss("ehrconfigs", "jquery-ui-1.9.2.custom.min.css")
     // toastmessage plugin: https://github.com/akquinet/jquery-toastmessage-plugin/wiki
     ui.includeJavascript("ehrconfigs", "jquery.toastmessage.js")
@@ -557,6 +559,11 @@
 	}
 	.print-only{
 		display: none;
+	}
+	a:link {
+		color: blue;
+		text-decoration: none;
+		cursor: pointer;
 	}
 </style>
 

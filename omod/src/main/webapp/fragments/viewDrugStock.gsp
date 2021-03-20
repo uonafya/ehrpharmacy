@@ -1,10 +1,4 @@
-<style>
-a:link {
-	color: blue;
-	text-decoration: none;
-	cursor: pointer;
-}
-</style>
+
 <script>
 	jq(function () {
 		getStockList();
@@ -107,6 +101,11 @@ a:link {
 	td:last-child{
 		width: 90px;
 		text-align: center;
+	}
+	a:link {
+		color: blue;
+		text-decoration: none;
+		cursor: pointer;
 	}
 </style>
 
