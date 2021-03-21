@@ -1,6 +1,13 @@
 <%
     def props = ["name", "createdOn", "subStoreStatusName", "action"]
 %>
+<style>
+a:link {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
 <script>
     jq(function () {
         jQuery('.date-pick').datepicker({minDate: '-100y', dateFormat: 'dd/mm/yy'});
@@ -83,6 +90,8 @@
                 link += '<a href="#" title="Send Order" onclick="processSendIndent(' + item.id + ');" >Send Order</a>';
             } else if (item.subStoreStatus == 3) {
                 link += '<a href="#" title="Process Order" onclick="processDrugIndent(' + item.id + ');" >Process Order</a>';
+            } else {
+                link += '<a href="#" title="Process Order" onclick="detailDrugIndentPrint(' + item.id + ');" >View</a>';
             }
 
             row += '<td>' + link + '</td>'
@@ -181,6 +190,7 @@ th:nth-child(2) {
 th:last-child {
     width: 70px;
 }
+
 </style>
 
 <div class="clear"></div>
