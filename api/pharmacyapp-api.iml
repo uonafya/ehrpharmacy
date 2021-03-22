@@ -11,7 +11,11 @@
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/moduleApplicationContext.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
@@ -25,7 +29,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:uiframework-api:3.3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:hospitalcore-api:1.6.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.api:openmrs-api:1.9.8" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.web:openmrs-web:1.9.8" level="project" />
@@ -38,7 +41,13 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.mozilla:rhino:1.7R4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:uilibrary-api:2.0.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:hospitalcore-api:1.0.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: org.openmrs.module:metadatadeploy-api:unknown" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:metadatadeploy-api:1.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: net.sf.opencsv:opencsv:2.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:kenyaemr-api:17.0.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: joda-time:joda-time:2.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:appframework-api:2.9" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.api:openmrs-api:1.12.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.commons:commons-lang3:3.1" level="project" />
@@ -119,8 +128,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: xml-resolver:xml-resolver:1.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.validation:validation-api:1.0.0.GA" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate:hibernate-validator:4.2.0.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.groovy:groovy-all:1.7.6" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.web:openmrs-web:1.12.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />

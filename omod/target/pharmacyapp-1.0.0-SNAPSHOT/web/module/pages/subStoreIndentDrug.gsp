@@ -28,7 +28,7 @@
         });
 		
         var indentName = [];
-        var adddrugdialog = ui.setupConfirmationDialog({
+        var adddrugdialog = emr.setupConfirmationDialog({
 			dialogOpts: {
 				overlayClose: false,
 				close: true
@@ -95,7 +95,7 @@
         });
 
 
-        var addnameforindentslipdialog = ui.setupConfirmationDialog({
+        var addnameforindentslipdialog = emr.setupConfirmationDialog({
 			dialogOpts: {
 				overlayClose: false,
 				close: true

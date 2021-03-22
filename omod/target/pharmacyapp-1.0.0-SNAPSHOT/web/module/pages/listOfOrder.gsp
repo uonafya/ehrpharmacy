@@ -4,6 +4,8 @@
 	ui.includeJavascript("ehrconfigs", "underscore-min.js")
 	ui.includeJavascript("ehrconfigs", "knockout-3.4.0.js")
 	ui.includeJavascript("ehrconfigs", "emr.js")
+	ui.includeJavascript("ehrconfigs", "moment.js")
+	ui.includeJavascript("ehrcashier", "moment.js")
 	ui.includeCss("ehrconfigs", "jquery-ui-1.9.2.custom.min.css")
 	// toastmessage plugin: https://github.com/akquinet/jquery-toastmessage-plugin/wiki
 	ui.includeJavascript("ehrconfigs", "jquery.toastmessage.js")
@@ -21,6 +23,12 @@
         jq('#agename').html('${patient.age} years ('+ moment('${patient.birthdate}').format('DD,MMM YYYY') +')');
         jq('#lstdate').html('Last Visit: '+ moment('${previousVisit}').format('DD, MMM YYYY'));
     });
+
+	function stringReplace(word) {
+		var res = word.replace("[", "");
+		res=res.replace("]","");
+		return res;
+	}
 </script>
 
 <style>
@@ -184,6 +192,11 @@
 	}
 	th:last-child{
 		width: 135px;
+	}
+	a:link {
+		color: blue;
+		text-decoration: none;
+		cursor: pointer;
 	}
 </style>
 

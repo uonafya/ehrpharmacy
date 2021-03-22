@@ -167,7 +167,7 @@
             })
         });
 
-        var addpatientdrugdialog = ui.setupConfirmationDialog({
+        var addpatientdrugdialog = emr.setupConfirmationDialog({
 			dialogOpts: {
 				overlayClose: false,
 				close: true

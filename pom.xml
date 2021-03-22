@@ -45,6 +45,7 @@
 		<hospitalcoreVersion>1.0.0-SNAPSHOT</hospitalcoreVersion>
 		<appframeworkVersion>2.9</appframeworkVersion>
 		<uiframeworkVersion>3.3.1</uiframeworkVersion>
+		<metadatadeployVersion>1.2</metadatadeployVersion>
 	</properties>
 
 	<dependencyManagement>
@@ -143,6 +144,12 @@
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>kenyaui-api</artifactId>
 				<version>${kenyauiVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>metadatadeploy-api</artifactId>
+				<version>${metadatadeployVersion}</version>
 				<scope>provided</scope>
 			</dependency>
 
