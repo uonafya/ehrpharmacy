@@ -3,30 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52be932b-ce8d-4084-9f70-af680c2880e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pharmacyapp-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pharmacyapp-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/pharmacyapp/metadata/PharmacyAppSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/pharmacyapp/metadata/PharmacyAppSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/pharmacyapp-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/pharmacyapp-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/pharmacyapp-omod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/pharmacyapp-omod.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/web/module/pages/drugOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/pages/drugOrder.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/web/module/pages/issueDrug.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/pages/issueDrug.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/web/module/pages/listOfOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/web/module/pages/listOfOrder.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.omod" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT.omod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/META-INF/maven/org.openmrs.module/pharmacyapp-api/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/lib/pharmacyapp-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/lib/pharmacyapp-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/container.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/container.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/drugOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/drugOrder.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/issueDrug.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/issueDrug.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/listOfOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/listOfOrder.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/subStoreIndentDrug.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/pharmacyapp-1.0.0-SNAPSHOT/web/module/pages/subStoreIndentDrug.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +108,11 @@
       <workItem from="1616255970405" duration="22000" />
       <workItem from="1616320207049" duration="987000" />
       <workItem from="1616344606307" duration="1209000" />
-      <workItem from="1616391200070" duration="1079000" />
+      <workItem from="1616391200070" duration="2901000" />
+      <workItem from="1616415793160" duration="663000" />
+      <workItem from="1616424816679" duration="1458000" />
+      <workItem from="1616439832338" duration="599000" />
+      <workItem from="1616482756866" duration="1451000" />
     </task>
     <servers />
   </component>
@@ -139,13 +120,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl" timestamp="1616359145860">
+    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl" timestamp="1616417818464">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1616359145860" />
-    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1616391903843">
+    <state x="780" y="297" width="424" height="482" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1616417818464" />
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1616424884723">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1616391903843" />
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1616424884723" />
   </component>
 </project>
