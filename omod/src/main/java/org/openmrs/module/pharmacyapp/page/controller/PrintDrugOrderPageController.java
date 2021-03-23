@@ -219,16 +219,17 @@ public class PrintDrugOrderPageController {
 
             for (PersonAttribute pa : pas) {
                 PersonAttributeType attributeType = pa.getAttributeType();
-                if (hcs.getPersonAttributeTypeByName("Paying Category Type") == Context.getPersonService()
-                        .getPersonAttributeTypeByUuid("e191b0b8-f069-11ea-b498-2bfd800847e8")) {
+
+                if (hcs.getPersonAttributeTypeByName("Paying Category Type").equals(Context.getPersonService()
+                        .getPersonAttributeTypeByUuid("e191b0b8-f069-11ea-b498-2bfd800847e8"))) {
                     model.addAttribute("paymentCategory", "PAYING");
                     model.addAttribute("paymentSubCategory", pa.getValue());
-                } else if (hcs.getPersonAttributeTypeByName("Non-Paying Category Type") == Context.getPersonService()
-                        .getPersonAttributeTypeByUuid("0a8ae818-f06a-11ea-ab82-2f183f30d954")) {
+                } else if (hcs.getPersonAttributeTypeByName("Non-Paying Category Type").equals(Context.getPersonService()
+                        .getPersonAttributeTypeByUuid("0a8ae818-f06a-11ea-ab82-2f183f30d954"))) {
                     model.addAttribute("paymentCategoryName", "NON-PAYING");
                     model.addAttribute("paymentSubCategory", pa.getValue());
-                } else if (hcs.getPersonAttributeTypeByName("Special Scheme Category Type") == Context.getPersonService()
-                        .getPersonAttributeTypeByUuid("341ee8fa-f06a-11ea-aca0-03d040bd88c8")) {
+                } else if (hcs.getPersonAttributeTypeByName("Special Scheme Category Type").equals(Context.getPersonService()
+                        .getPersonAttributeTypeByUuid("341ee8fa-f06a-11ea-aca0-03d040bd88c8")) ){
                     model.addAttribute("paymentCategoryName", "SPECIAL SCHEMES");
                     model.addAttribute("paymentSubCategory", pa.getValue());
                 }
