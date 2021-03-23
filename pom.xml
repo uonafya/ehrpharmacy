@@ -34,7 +34,7 @@
 	</modules>
 
 	<properties>
-		<openMRSVersion>1.9.9</openMRSVersion>
+		<openMRSVersion>1.12.0</openMRSVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<kenyauiVersion>2.1.1</kenyauiVersion>
 		<kenyacoreVersion>2.4.1</kenyacoreVersion>
@@ -44,7 +44,7 @@
 		<kenyaemrVersion>17.0.3</kenyaemrVersion>
 		<hospitalcoreVersion>1.0.0-SNAPSHOT</hospitalcoreVersion>
 		<appframeworkVersion>2.9</appframeworkVersion>
-		<uiframeworkVersion>3.11.0</uiframeworkVersion>
+		<uiframeworkVersion>3.3.1</uiframeworkVersion>
 	</properties>
 
 	<dependencyManagement>

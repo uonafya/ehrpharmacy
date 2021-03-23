@@ -219,6 +219,7 @@ public class PrintDrugOrderPageController {
 
             for (PersonAttribute pa : pas) {
                 PersonAttributeType attributeType = pa.getAttributeType();
+
                 if (hcs.getPersonAttributeTypeByName("Paying Category Type").equals(Context.getPersonService()
                         .getPersonAttributeTypeByUuid("e191b0b8-f069-11ea-b498-2bfd800847e8"))) {
                     model.addAttribute("paymentCategory", "PAYING");

@@ -219,6 +219,7 @@ public class DrugOrderPageController {
                 InventoryCommonService inventoryCommonService = Context.getService(InventoryCommonService.class);
                 Concept fCon = Context.getConceptService().getConcept(formattedFrequencyName);
                 if (quantity != 0 && quantity != null) {
+
                     InventoryDrugFormulation inventoryDrugFormulation = inventoryCommonService.getDrugFormulationById(formulationId);
                     InventoryStoreDrugPatientDetail pDetail = new InventoryStoreDrugPatientDetail();
                     InventoryStoreDrugTransactionDetail inventoryStoreDrugTransactionDetail = inventoryService.getStoreDrugTransactionDetailById(listOfDrugQuantity);

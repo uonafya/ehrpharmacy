@@ -8,6 +8,7 @@
 **/target
 *.iml
 .idea
+.idea/workspace.xml
 .DS_Store
 .vscode
 
