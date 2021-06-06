@@ -45,8 +45,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.mozilla:rhino:1.7R4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.owasp.encoder:encoder:1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:uilibrary-api:2.0.4" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:hospitalcore-api:1.0.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:ehrinventory-api:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:hospitalcore-api:1.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:ehrinventory-api:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:20160212" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.api:openmrs-api:1.12.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />

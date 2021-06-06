@@ -11,6 +11,7 @@
 .idea/workspace.xml
 .DS_Store
 .vscode
+*/*.iml
 
 # Log file
 *.log
