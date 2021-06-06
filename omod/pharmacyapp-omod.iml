@@ -38,11 +38,12 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:referenceapplication-omod:1.0.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:referenceapplication-api:1.0.1" level="project" />
     <orderEntry type="module" module-name="pharmacyapp-api" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:uiframework-api:3.3.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:uiframework-api:3.8" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.github.jknack:handlebars:1.3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.antlr:antlr4-runtime:4.2.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.antlr:antlr4-annotations:4.2.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.mozilla:rhino:1.7R4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.owasp.encoder:encoder:1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:uilibrary-api:2.0.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:hospitalcore-api:1.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:ehrinventory-api:1.0.0-SNAPSHOT" level="project" />
