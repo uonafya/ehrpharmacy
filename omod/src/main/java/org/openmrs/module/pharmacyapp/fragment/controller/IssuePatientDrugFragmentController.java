@@ -232,7 +232,7 @@ public class IssuePatientDrugFragmentController {
             transaction.setTypeTransaction(ActionValue.TRANSACTION[1]);
             transaction.setCreatedOn(date);
             //transaction.setPaymentMode(paymentMode);
-            transaction.setPaymentCategory(issueDrugPatient.getPatient().getAttribute(14).getValue());
+            transaction.setPaymentCategory(String.valueOf(issueDrugPatient.getPatient().getAttribute(Context.getPersonService().getPersonAttributeTypeByUuid("09cd268a-f0f5-11ea-99a8-b3467ddbf779"))));
             transaction.setCreatedBy(Context.getAuthenticatedUser().getGivenName());
             transaction = inventoryService.saveStoreDrugTransaction(transaction);
 
