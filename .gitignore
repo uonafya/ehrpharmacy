@@ -1,3 +1,10 @@
+api/target
+omod/target
+**/bin
+/.git
+/.settings
+/.project
+/.classpath
 # Compiled class file
 *.class
 
@@ -5,13 +12,11 @@
 .settings
 .project
 .classpath
-**/target
+target
 *.iml
 .idea
-.idea/workspace.xml
 .DS_Store
 .vscode
-*/*.iml
 
 # Log file
 *.log
@@ -36,6 +41,6 @@ hs_err_pid*
 
 
 api/.scalastyle
-
+api/src/test/java/org/openmrs/module/eptsreports/LiveTests.java
 omod/maven-eclipse.xml
 omod/.externalToolBuilders/Maven_Ant_Builder.launch
