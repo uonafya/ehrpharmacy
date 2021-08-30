@@ -22,6 +22,7 @@
 
     var confirmdrugdialog;
     var processdrugdialog;
+	var clinicalSummaryDialog;
 
     var listOfDrugQuantity = "";
     var focusItem;
@@ -67,6 +68,10 @@
 			list.pRemove.push(focusItem);
 			list.listItems.remove(focusItem);
 			processdrugdialog.close();
+		});
+
+		jq("#").onclick(function (){
+			clinicalSummaryDialog.show();
 		});
 
         jq.fn.serializeFormJSON = function () {
@@ -115,6 +120,19 @@
                 },
                 cancel: function () {
                     confirmdrugdialog.close();
+                }
+            }
+        });
+
+		clinicalSummaryDialog = emr.setupConfirmationDialog({
+            dialogOpts: {
+                overlayClose: false,
+                close: true
+            },
+            selector: '#clinicalSummaryDialog',
+            actions: {
+                cancel: function () {
+					clinicalSummaryDialog.close();
                 }
             }
         });
@@ -845,6 +863,8 @@
                    style="float: right; margin-right: 0px" data-bind="click: \$root.finishDrugOrder"/>
             <input type="button" id="print" name="print" value="Print Order" onClick="printDiv2();" class="task"
                    style="float: right; margin-right: 5px"/>
+			<input type="button" id="summary" name="summary" onClick="" class="task"
+                   style="float: right; margin-right: 5px"/>
         </div>
 
         <div id="processDrugDialog" class="dialog" style="display: none; width: 900px">
@@ -906,9 +926,22 @@
         </div>
     </div>
 
+	<div id="clinicalSummaryDialog" class="dialog" style="display: none; width: 900px">
+		<div class="dialog-header">
+			<i class="icon-folder-open"></i>
+			<h3>Clinical Summary </h3>
+			<button class="button cancel ">Close</button>
+		</div>
+		<div class="dialog-content">
+			${ ui.includeFragment("patientdashboardapp", "visitSummary", [patientId: patientId]) }
+		</div>
+
+	</div>
 
 
-    <!--PRINT DIV  -->
+
+
+	<!--PRINT DIV  -->
     <div id="printDiv" class="hidden">
 
         <center>
