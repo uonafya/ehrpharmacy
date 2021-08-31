@@ -14,6 +14,7 @@
     ui.includeJavascript("ehrconfigs", "jquery.simplemodal.1.4.4.min.js")
     ui.includeCss("ehrconfigs", "referenceapplication.css")
     ui.includeJavascript("ehrcashier", "jq.print.js")
+	ui.includeJavascript("patientdashboardapp", "jq.slimscroll.js")
 %>
 
 <script>
@@ -70,10 +71,6 @@
 			processdrugdialog.close();
 		});
 
-		jq("#").onclick(function (){
-			clinicalSummaryDialog.show();
-		});
-
         jq.fn.serializeFormJSON = function () {
             var o = [];
             jq(this).find('tr').each(function () {
@@ -100,7 +97,6 @@
                     //empty for now
                 },
                 cancel: function () {
-
                     processdrugdialog.close();
                 }
             }
@@ -235,6 +231,7 @@
             "date": '${date}'
         });
     }
+
 
     function printDiv2() {
         jq("#printDiv").print({
@@ -863,7 +860,7 @@
                    style="float: right; margin-right: 0px" data-bind="click: \$root.finishDrugOrder"/>
             <input type="button" id="print" name="print" value="Print Order" onClick="printDiv2();" class="task"
                    style="float: right; margin-right: 5px"/>
-			<input type="button" id="summary" name="summary" onClick="" class="task"
+			<input type="button" id="summary" name="summary" value="Patient Summary" onClick="clinicalSummaryDialog.show();" class="confirm"
                    style="float: right; margin-right: 5px"/>
         </div>
 
@@ -926,11 +923,12 @@
         </div>
     </div>
 
+	<!--SUMMARY DIALOG -->
 	<div id="clinicalSummaryDialog" class="dialog" style="display: none; width: 900px">
 		<div class="dialog-header">
 			<i class="icon-folder-open"></i>
 			<h3>Clinical Summary </h3>
-			<button class="button cancel ">Close</button>
+			<i class="icon-remove cancel right " style="padding-right: 10px"></i>
 		</div>
 		<div class="dialog-content">
 			${ ui.includeFragment("patientdashboardapp", "visitSummary", [patientId: patientId]) }
