@@ -14,6 +14,7 @@
     ui.includeJavascript("ehrconfigs", "jquery.simplemodal.1.4.4.min.js")
     ui.includeCss("ehrconfigs", "referenceapplication.css")
     ui.includeJavascript("ehrcashier", "jq.print.js")
+	ui.includeJavascript("patientdashboardapp", "jq.slimscroll.js")
 %>
 
 <script>
@@ -22,6 +23,7 @@
 
     var confirmdrugdialog;
     var processdrugdialog;
+	var clinicalSummaryDialog;
 
     var listOfDrugQuantity = "";
     var focusItem;
@@ -95,7 +97,6 @@
                     //empty for now
                 },
                 cancel: function () {
-
                     processdrugdialog.close();
                 }
             }
@@ -115,6 +116,19 @@
                 },
                 cancel: function () {
                     confirmdrugdialog.close();
+                }
+            }
+        });
+
+		clinicalSummaryDialog = emr.setupConfirmationDialog({
+            dialogOpts: {
+                overlayClose: false,
+                close: true
+            },
+            selector: '#clinicalSummaryDialog',
+            actions: {
+                cancel: function () {
+					clinicalSummaryDialog.close();
                 }
             }
         });
@@ -217,6 +231,7 @@
             "date": '${date}'
         });
     }
+
 
     function printDiv2() {
         jq("#printDiv").print({
@@ -845,6 +860,8 @@
                    style="float: right; margin-right: 0px" data-bind="click: \$root.finishDrugOrder"/>
             <input type="button" id="print" name="print" value="Print Order" onClick="printDiv2();" class="task"
                    style="float: right; margin-right: 5px"/>
+			<input type="button" id="summary" name="summary" value="Patient Summary" onClick="clinicalSummaryDialog.show();" class="confirm"
+                   style="float: right; margin-right: 5px"/>
         </div>
 
         <div id="processDrugDialog" class="dialog" style="display: none; width: 900px">
@@ -906,9 +923,23 @@
         </div>
     </div>
 
+	<!--SUMMARY DIALOG -->
+	<div id="clinicalSummaryDialog" class="dialog" style="display: none; width: 900px">
+		<div class="dialog-header">
+			<i class="icon-folder-open"></i>
+			<h3>Clinical Summary </h3>
+			<i class="icon-remove cancel right " style="padding-right: 10px"></i>
+		</div>
+		<div class="dialog-content">
+			${ ui.includeFragment("patientdashboardapp", "visitSummary", [patientId: patientId]) }
+		</div>
+
+	</div>
 
 
-    <!--PRINT DIV  -->
+
+
+	<!--PRINT DIV  -->
     <div id="printDiv" class="hidden">
 
         <center>

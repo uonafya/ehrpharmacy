@@ -825,7 +825,7 @@
 					<td></td>
 					<td colspan="8"><b>TOTALS</b></td>
 					<td>
-						<b><span data-bind="text: issueTotal().toFixed(2)"></b></span>
+						<b><span data-bind="text: issueTotal().toFixed(2)"></span></b>
 					</td>
 					<td></td>
 				</tr>
