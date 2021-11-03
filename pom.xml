@@ -4,7 +4,7 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>pharmacyapp</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Pharmacy App Module</name>
 	<description>Pharmacy Inventory</description>
