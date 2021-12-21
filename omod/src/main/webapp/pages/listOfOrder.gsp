@@ -260,7 +260,7 @@
             <br>
 
             <div class="catg">
-                <i class="icon-tags small" style="font-size: 16px"></i><small>Category:</small> ${patientCategory}
+                <i class="icon-tags small" style="font-size: 16px"></i><small>Category:</small> ${patientCategory}/${patientSubCategory}
             </div>
         </div>
     </div>
