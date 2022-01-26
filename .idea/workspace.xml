@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52be932b-ce8d-4084-9f70-af680c2880e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/DrugOrderPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/DrugOrderPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ListOfOrderPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ListOfOrderPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/drugOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/drugOrder.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/listOfOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/listOfOrder.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jembi/openmrs-module-eptsreports" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -126,7 +123,8 @@
       <workItem from="1635749310484" duration="599000" />
       <workItem from="1635760421861" duration="1770000" />
       <workItem from="1635787866240" duration="599000" />
-      <workItem from="1636007706119" duration="8183000" />
+      <workItem from="1636007706119" duration="8362000" />
+      <workItem from="1643188457284" duration="225000" />
     </task>
     <servers />
   </component>

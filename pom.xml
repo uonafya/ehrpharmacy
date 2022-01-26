@@ -38,11 +38,11 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<kenyauiVersion>2.1.1</kenyauiVersion>
 		<kenyacoreVersion>2.4.1</kenyacoreVersion>
-		<ehrinventoryVersion>1.0.0</ehrinventoryVersion>
+		<ehrinventoryVersion>1.0.2</ehrinventoryVersion>
 		<appuiVersion>1.8.0</appuiVersion>
 		<uilibraryVersion>2.0.4</uilibraryVersion>
 		<kenyaemrVersion>17.0.3</kenyaemrVersion>
-		<hospitalcoreVersion>1.0.0</hospitalcoreVersion>
+		<hospitalcoreVersion>1.0.7</hospitalcoreVersion>
 		<appframeworkVersion>2.9</appframeworkVersion>
 		<uiframeworkVersion>3.8</uiframeworkVersion>
 		<metadatadeployVersion>1.3</metadatadeployVersion>
