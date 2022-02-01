@@ -34,8 +34,6 @@ public class SendDrugIndentToMainStorePageController {
                       UiSessionContext sessionContext,
                       PageRequest pageRequest) {
 
-        pageRequest.getSession().setAttribute(ReferenceApplicationWebConstants.SESSION_ATTRIBUTE_REDIRECT_URL,ui.thisUrl());
-        sessionContext.requireAuthentication();
 
         InventoryService inventoryService = (InventoryService) Context
                 .getService(InventoryService.class);

@@ -34,9 +34,6 @@ public class ListOfOrderPageController {
                     @RequestParam("patientId") Patient patient,
                     @RequestParam(value = "date", required = false) String dateStr) {
 
-        pageRequest.getSession().setAttribute(ReferenceApplicationWebConstants.SESSION_ATTRIBUTE_REDIRECT_URL,ui.thisUrl());
-        sessionContext.requireAuthentication();
-
         InventoryService inventoryService = Context.getService(InventoryService.class);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         Date date = null;

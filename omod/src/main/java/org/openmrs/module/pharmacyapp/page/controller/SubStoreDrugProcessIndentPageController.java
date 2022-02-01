@@ -39,9 +39,6 @@ public class SubStoreDrugProcessIndentPageController {
                       PageRequest pageRequest
     ) {
 
-        pageRequest.getSession().setAttribute(ReferenceApplicationWebConstants.SESSION_ATTRIBUTE_REDIRECT_URL,ui.thisUrl());
-        sessionContext.requireAuthentication();
-
         InventoryService inventoryService = (InventoryService) Context.getService(InventoryService.class);
         InventoryStoreDrugIndent indent = inventoryService.getStoreDrugIndentById(indentId);
         if (indent != null && indent.getSubStoreStatus() != 3 && indent.getMainStoreStatus() != 3) {

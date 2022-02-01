@@ -28,8 +28,6 @@ public class IndentDrugDetailPageController {
                     UiUtils ui,
                     PageModel pageModel) {
 
-        pageRequest.getSession().setAttribute(ReferenceApplicationWebConstants.SESSION_ATTRIBUTE_REDIRECT_URL,ui.thisUrl());
-        sessionContext.requireAuthentication();
 
         pageModel.addAttribute("listTransactionDetail", "");
         InventoryService inventoryService = (InventoryService) Context

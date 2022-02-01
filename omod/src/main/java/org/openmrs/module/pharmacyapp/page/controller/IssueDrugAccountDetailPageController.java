@@ -31,9 +31,6 @@ public class IssueDrugAccountDetailPageController {
             UiUtils ui,
             PageModel model) {
 
-        pageRequest.getSession().setAttribute(ReferenceApplicationWebConstants.SESSION_ATTRIBUTE_REDIRECT_URL,ui.thisUrl());
-        sessionContext.requireAuthentication();
-
         InventoryService inventoryService = (InventoryService) Context
                 .getService(InventoryService.class);
         List<InventoryStoreDrugAccountDetail> listDrugIssue = inventoryService

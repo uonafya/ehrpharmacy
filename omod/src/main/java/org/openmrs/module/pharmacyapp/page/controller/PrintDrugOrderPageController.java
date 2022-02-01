@@ -36,9 +36,6 @@ public class PrintDrugOrderPageController {
                     PageRequest pageRequest,
                     UiUtils uiUtils) {
 
-        pageRequest.getSession().setAttribute(ReferenceApplicationWebConstants.SESSION_ATTRIBUTE_REDIRECT_URL,uiUtils.thisUrl());
-        sessionContext.requireAuthentication();
-
         model.addAttribute("userLocation", Context.getAdministrationService().getGlobalProperty("hospital.location_user"));
         InventoryService inventoryService = Context.getService(InventoryService.class);
         List<Role> role = new ArrayList<Role>(Context.getAuthenticatedUser().getAllRoles());

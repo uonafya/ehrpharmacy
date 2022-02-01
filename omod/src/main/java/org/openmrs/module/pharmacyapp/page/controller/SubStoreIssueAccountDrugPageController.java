@@ -27,8 +27,6 @@ public class SubStoreIssueAccountDrugPageController {
                     UiSessionContext sessionContext,
                     PageRequest pageRequest,
                     UiUtils ui) {
-        pageRequest.getSession().setAttribute(ReferenceApplicationWebConstants.SESSION_ATTRIBUTE_REDIRECT_URL,ui.thisUrl());
-        sessionContext.requireAuthentication();
 
         InventoryService inventoryService = Context.getService(InventoryService.class);
 

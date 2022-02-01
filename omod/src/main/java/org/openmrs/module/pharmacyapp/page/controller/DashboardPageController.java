@@ -34,8 +34,6 @@ public class DashboardPageController {
                       UiUtils ui,
                       @RequestParam(value="tabId",required=false)  String tabId) {
 
-        pageRequest.getSession().setAttribute(ReferenceApplicationWebConstants.SESSION_ATTRIBUTE_REDIRECT_URL,ui.thisUrl());
-        sessionContext.requireAuthentication();
 
         List<InventoryStoreDrugTransactionDetail> listReceiptDrugReturn = null;
         InventoryService inventoryService = (InventoryService) Context

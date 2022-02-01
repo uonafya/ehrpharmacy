@@ -51,8 +51,6 @@ public class DrugOrderPageController {
             @RequestParam(value = "patientType", required = false) String patientType,
             UiUtils uiUtils) {
 
-        pageRequest.getSession().setAttribute(ReferenceApplicationWebConstants.SESSION_ATTRIBUTE_REDIRECT_URL, uiUtils.thisUrl());
-        sessionContext.requireAuthentication();
 
         InventoryService inventoryService = Context
                 .getService(InventoryService.class);
