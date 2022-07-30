@@ -41,11 +41,11 @@ public class ViewStockBalanceDetailFragmentController {
         }
         InventoryStore store =null;
         if(storeRoleRelation!=null){
-            store = inventoryService.getStoreById(storeRoleRelation.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
         List<InventoryStoreDrugTransactionDetail> listViewStockBalance = inventoryService
-                .listStoreDrugTransactionDetail(store.getId(), drugId,
+                .listStoreDrugTransactionDetail(4, drugId,
                         formulationId, expiry);
 
         return SimpleObject.fromCollection(listViewStockBalance,uiUtils,"drug.name","drug.category.name","formulation.dozage", "transaction.typeTransactionName","transaction.indents.store.name","drug.attribute","quantity","issueQuantity","currentQuantity","openingBalance","closingBalance","dateManufacture","dateExpiry","receiptDate");

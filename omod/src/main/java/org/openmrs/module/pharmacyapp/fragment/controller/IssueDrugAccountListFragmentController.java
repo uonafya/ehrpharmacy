@@ -56,10 +56,10 @@ public class IssueDrugAccountListFragmentController {
         }
         InventoryStore store = null;
         if (storeRoleRelation != null) {
-            store = inventoryService.getStoreById(storeRoleRelation.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
-        int total = inventoryService.countStoreDrugAccount(store.getId(), issueName, fromDate, toDate);
+        int total = inventoryService.countStoreDrugAccount(4, issueName, fromDate, toDate);
         String temp = "";
 
         if (issueName != null) {
@@ -85,7 +85,7 @@ public class IssueDrugAccountListFragmentController {
         }
 
         PagingUtil pagingUtil = new PagingUtil(RequestUtil.getCurrentLink(request) + temp, pageSize, currentPage, total);
-        List<InventoryStoreDrugAccount> listIssue = inventoryService.listStoreDrugAccount(store.getId(), issueName, fromDate, toDate, pagingUtil.getStartPos(), pagingUtil.getPageSize());
+        List<InventoryStoreDrugAccount> listIssue = inventoryService.listStoreDrugAccount(4, issueName, fromDate, toDate, pagingUtil.getStartPos(), pagingUtil.getPageSize());
 
         return SimpleObject.fromCollection(listIssue, uiUtils, "id", "name", "createdOn");
     }
@@ -125,13 +125,13 @@ public class IssueDrugAccountListFragmentController {
         }
         InventoryStore store = null;
         if (srl != null) {
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
         if (store != null && drug != null && formulationId != null) {
 
             List<InventoryStoreDrugTransactionDetail> listReceiptDrug = inventoryService
-                    .listStoreDrugTransactionDetail(store.getId(),
+                    .listStoreDrugTransactionDetail(4,
                             drug.getId(), formulationId, true);
             // check that drug is issued before
             int userId = Context.getAuthenticatedUser().getId();
@@ -216,7 +216,7 @@ public class IssueDrugAccountListFragmentController {
         }
         InventoryStore store = null;
         if (srl != null) {
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
         }
         InventoryStoreDrugAccount issueAccount = new InventoryStoreDrugAccount();
         issueAccount.setCreatedBy(Context.getAuthenticatedUser().getGivenName());
@@ -246,7 +246,7 @@ public class IssueDrugAccountListFragmentController {
         }
         InventoryStore store = null;
         if (srl != null) {
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
 

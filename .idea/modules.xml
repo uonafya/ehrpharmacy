@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/pharmacyapp.iml" filepath="$PROJECT_DIR$/pharmacyapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/pharmacyapp-api.iml" filepath="$PROJECT_DIR$/api/pharmacyapp-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/omod/pharmacyapp-omod.iml" filepath="$PROJECT_DIR$/omod/pharmacyapp-omod.iml" />
     </modules>
   </component>
 </project>

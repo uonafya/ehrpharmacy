@@ -57,11 +57,11 @@ public class ViewDrugIssuedPatientFragmentController {
         InventoryStore store =null;
 
         if(srl!=null){
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
 
-        int total = inventoryService.countStoreDrugPatient(store.getId(), issueName, fromDate, toDate);
+        int total = inventoryService.countStoreDrugPatient(4, issueName, fromDate, toDate);
 
 
         String temp = "";
@@ -97,7 +97,7 @@ public class ViewDrugIssuedPatientFragmentController {
         }
 
         PagingUtil pagingUtil = new PagingUtil( RequestUtil.getCurrentLink(request)+temp , pageSize, currentPage, total );
-        List<InventoryStoreDrugPatient> listIssue = inventoryService.listStoreDrugPatient(store.getId(),receiptId, issueName,fromDate, toDate, pagingUtil.getStartPos(), pagingUtil.getPageSize());
+        List<InventoryStoreDrugPatient> listIssue = inventoryService.listStoreDrugPatient(4,receiptId, issueName,fromDate, toDate, pagingUtil.getStartPos(), pagingUtil.getPageSize());
 
         for(InventoryStoreDrugPatient in :listIssue)
         {
@@ -139,7 +139,7 @@ public class ViewDrugIssuedPatientFragmentController {
         }
         InventoryStore store =null;
         if(srl!=null){
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
 
@@ -169,7 +169,7 @@ public class ViewDrugIssuedPatientFragmentController {
                     e.printStackTrace();
                 }
                 Integer totalQuantity = inventoryService
-                        .sumCurrentQuantityDrugOfStore(store.getId(), pDetail
+                        .sumCurrentQuantityDrugOfStore(4, pDetail
                                         .getTransactionDetail().getDrug().getId(),
                                 pDetail.getTransactionDetail().getFormulation()
                                         .getId());

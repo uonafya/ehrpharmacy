@@ -57,7 +57,7 @@ public class ContainerPageController {
         String dateStr = "";
         List<Action> listSubStoreStatus = new ArrayList<Action>();
         if (srl != null) {
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
             dateStr = sdf.format(new Date());
 

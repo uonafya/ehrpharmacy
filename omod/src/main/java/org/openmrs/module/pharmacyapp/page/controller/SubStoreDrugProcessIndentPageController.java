@@ -76,7 +76,7 @@ public class SubStoreDrugProcessIndentPageController {
         }
         InventoryStore subStore = null;
         if (srl != null) {
-            subStore = inventoryService.getStoreById(srl.getStoreid());
+            subStore = inventoryService.getStoreById(4);
 
         }
         List<InventoryStoreDrugTransactionDetail> refundDrugList = inventoryService.listTransactionDetail(indent.getTransaction().getId());
@@ -87,7 +87,7 @@ public class SubStoreDrugProcessIndentPageController {
                 inventoryService.saveStoreDrugIndent(indent);
 
                 for (InventoryStoreDrugIndentDetail t : listIndentDetail) {
-                    InventoryStoreDrug storeDrug = inventoryService.getStoreDrug(indent.getStore().getId(), t.getDrug().getId(), t.getFormulation().getId());
+                    InventoryStoreDrug storeDrug = inventoryService.getStoreDrug(4, t.getDrug().getId(), t.getFormulation().getId());
                     if (storeDrug != null) {
                         storeDrug.setStatusIndent(0);
                         inventoryService.saveStoreDrug(storeDrug);
@@ -161,7 +161,7 @@ public class SubStoreDrugProcessIndentPageController {
         for (InventoryStoreDrugTransactionDetail refund : refundDrugList) {
 
             Date date = new Date();
-            Integer sumTotalQuantity = inventoryService.sumCurrentQuantityDrugOfStore(subStore.getId(), refund.getDrug().getId(), refund.getFormulation().getId());
+            Integer sumTotalQuantity = inventoryService.sumCurrentQuantityDrugOfStore(4, refund.getDrug().getId(), refund.getFormulation().getId());
             InventoryStoreDrugTransactionDetail transDetail = new InventoryStoreDrugTransactionDetail();
             transDetail.setTransaction(transaction);
             transDetail.setDrug(refund.getDrug());

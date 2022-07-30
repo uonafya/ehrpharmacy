@@ -51,10 +51,10 @@ public class IndentDrugListFragmentController {
         }
         InventoryStore subStore = null;
         if (storeRoleRelation != null) {
-            subStore = inventoryService.getStoreById(storeRoleRelation.getStoreid());
+            subStore = inventoryService.getStoreById(4);
 
         }
-        int total = inventoryService.countSubStoreIndent(subStore.getId(), indentName, statusId, fromDate, toDate);
+        int total = inventoryService.countSubStoreIndent(4, indentName, statusId, fromDate, toDate);
 
         String temp = "";
         if (!StringUtils.isBlank(indentName)) {
@@ -83,7 +83,7 @@ public class IndentDrugListFragmentController {
             }
         }
         PagingUtil pagingUtil = new PagingUtil(RequestUtil.getCurrentLink(request) + temp, pageSize, currentPage, total);
-        List<InventoryStoreDrugIndent> listIndent = inventoryService.listSubStoreIndent(subStore.getId(), indentName, statusId, fromDate, toDate, pagingUtil.getStartPos(), pagingUtil.getPageSize());
+        List<InventoryStoreDrugIndent> listIndent = inventoryService.listSubStoreIndent(4, indentName, statusId, fromDate, toDate, pagingUtil.getStartPos(), pagingUtil.getPageSize());
         List<Action> listSubStoreStatus = ActionValue.getListIndentSubStore();
 
         return SimpleObject.fromCollection(listIndent, uiUtils, "id", "name", "createdOn", "transaction.description", "subStoreStatus", "subStoreStatusName");

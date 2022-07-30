@@ -50,7 +50,7 @@ public class PrintDrugOrderPageController {
         }
         InventoryStore store = null;
         if (srl != null) {
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
         List<InventoryStoreDrugPatientDetail> listDrugIssue = inventoryService
@@ -74,7 +74,7 @@ public class PrintDrugOrderPageController {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
-                Integer totalQuantity = inventoryService.sumCurrentQuantityDrugOfStore(store.getId(), pDetail
+                Integer totalQuantity = inventoryService.sumCurrentQuantityDrugOfStore(4, pDetail
                         .getTransactionDetail().getDrug().getId(), pDetail.getTransactionDetail().getFormulation().getId());
                 int t = totalQuantity;
 

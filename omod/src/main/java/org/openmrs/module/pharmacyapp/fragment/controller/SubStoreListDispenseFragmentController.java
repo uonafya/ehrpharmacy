@@ -52,13 +52,13 @@ public class SubStoreListDispenseFragmentController {
         }
         InventoryStore store = null;
         if (srl != null) {
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
 
         List<SimpleObject> dispenseList = new ArrayList<SimpleObject>();
 
-        int total = inventoryService.countStoreDrugPatient(store.getId(), searchIssueName, fromDate, toDate);
+        int total = inventoryService.countStoreDrugPatient(4, searchIssueName, fromDate, toDate);
         String temp = "";
 
         if (searchIssueName != null) {
@@ -93,7 +93,7 @@ public class SubStoreListDispenseFragmentController {
         if (StringUtils.isBlank(fromDate)) {
             fromDate = sdf.format(new Date());
         }
-        List<InventoryStoreDrugPatient> listIssue = inventoryService.listStoreDrugPatient(store.getId(), receiptId, searchIssueName, fromDate, toDate, pagingUtil.getStartPos(), pagingUtil.getPageSize());
+        List<InventoryStoreDrugPatient> listIssue = inventoryService.listStoreDrugPatient(4, receiptId, searchIssueName, fromDate, toDate, pagingUtil.getStartPos(), pagingUtil.getPageSize());
 
         for (InventoryStoreDrugPatient inventoryStoreDrugPatient : listIssue) {
             inventoryStoreDrugPatient = inventoryService.saveStoreDrugPatient(inventoryStoreDrugPatient);

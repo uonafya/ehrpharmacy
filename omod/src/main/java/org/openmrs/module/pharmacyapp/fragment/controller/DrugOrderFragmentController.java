@@ -49,7 +49,7 @@ public class DrugOrderFragmentController {
         }
         InventoryStore store = null;
         if (srl != null) {
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
         if (store != null && drug != null && formulationId != null) {
@@ -144,7 +144,7 @@ public class DrugOrderFragmentController {
         }
         InventoryStore store = null;
         if (srl != null) {
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
         List<InventoryStoreDrugPatientDetail> listDrugIssue = inventoryService
@@ -170,7 +170,7 @@ public class DrugOrderFragmentController {
                     e.printStackTrace();
                 }
                 Integer totalQuantity = inventoryService
-                        .sumCurrentQuantityDrugOfStore(store.getId(), pDetail
+                        .sumCurrentQuantityDrugOfStore(4, pDetail
                                         .getTransactionDetail().getDrug().getId(),
                                 pDetail.getTransactionDetail().getFormulation()
                                         .getId());

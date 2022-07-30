@@ -52,11 +52,11 @@ public class ViewCurrentStockBalanceDetailPageController {
         InventoryStore store = null;
 
         if (storeRoleRelation != null) {
-            store = inventoryService.getStoreById(storeRoleRelation.getStoreid());
+            store = inventoryService.getStoreById(4);
         }
 
         List<InventoryStoreDrugTransactionDetail> listViewStockBalance = inventoryService
-                .listStoreDrugTransactionDetail(store.getId(), drugId,
+                .listStoreDrugTransactionDetail(4, drugId,
                         formulationId, expiry);
         model.addAttribute("listViewStockBalance", listViewStockBalance);
         model.addAttribute("formulation",formulation);

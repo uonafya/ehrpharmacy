@@ -52,10 +52,10 @@ public class ViewDrugStockFragmentController {
         }
         InventoryStore store =null;
         if(srl!=null){
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
-        int total = inventoryService.countViewStockBalance(store.getId(), categoryId, drugName, attribute, fromDate, toDate , false);
+        int total = inventoryService.countViewStockBalance(4, categoryId, drugName, attribute, fromDate, toDate , false);
 
         String temp = "";
         if(categoryId != null){
@@ -94,7 +94,7 @@ public class ViewDrugStockFragmentController {
         }
 
         PagingUtil pagingUtil = new PagingUtil( RequestUtil.getCurrentLink(request)+temp , pageSize, currentPage, total );
-        List<InventoryStoreDrugTransactionDetail> stockBalances = inventoryService.listViewStockBalance(store.getId(), categoryId, drugName, attribute, fromDate, toDate, false, pagingUtil.getStartPos(), pagingUtil.getPageSize());
+        List<InventoryStoreDrugTransactionDetail> stockBalances = inventoryService.listViewStockBalance(4, categoryId, drugName, attribute, fromDate, toDate, false, pagingUtil.getStartPos(), pagingUtil.getPageSize());
         List<InventoryDrugCategory> listCategory = inventoryService.listDrugCategory("", 0, 0);
 
         if (stockBalances!=null){

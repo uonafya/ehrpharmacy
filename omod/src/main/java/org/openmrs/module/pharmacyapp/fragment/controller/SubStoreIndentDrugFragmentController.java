@@ -47,10 +47,10 @@ public class SubStoreIndentDrugFragmentController {
         }
         InventoryStore store = null;
         if (srl != null) {
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
-        InventoryStore mainStore = inventoryService.getStoreById(mainStoreId);
+        InventoryStore mainStore = inventoryService.getStoreById(4);
         InventoryStoreDrugIndent indent = new InventoryStoreDrugIndent();
         indent.setName(indentName);
         indent.setCreatedOn(date);

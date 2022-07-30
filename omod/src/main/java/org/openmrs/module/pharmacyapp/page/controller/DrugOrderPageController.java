@@ -143,7 +143,7 @@ public class DrugOrderPageController {
         }
         InventoryStore store = null;
         if (srl != null) {
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
 
@@ -222,7 +222,7 @@ public class DrugOrderPageController {
                     InventoryDrugFormulation inventoryDrugFormulation = inventoryCommonService.getDrugFormulationById(formulationId);
                     InventoryStoreDrugPatientDetail pDetail = new InventoryStoreDrugPatientDetail();
                     InventoryStoreDrugTransactionDetail inventoryStoreDrugTransactionDetail = inventoryService.getStoreDrugTransactionDetailById(listOfDrugQuantity);
-                    Integer totalQuantity = inventoryService.sumCurrentQuantityDrugOfStore(store.getId(),
+                    Integer totalQuantity = inventoryService.sumCurrentQuantityDrugOfStore(4,
                             inventoryStoreDrugTransactionDetail.getDrug().getId(), inventoryDrugFormulation.getId());
                     int t = totalQuantity;
                     InventoryStoreDrugTransactionDetail drugTransactionDetail = inventoryService.getStoreDrugTransactionDetailById(inventoryStoreDrugTransactionDetail.getId());
@@ -343,7 +343,7 @@ public class DrugOrderPageController {
                         e.printStackTrace();
                     }
                     Integer totalQuantity = inventoryService
-                            .sumCurrentQuantityDrugOfStore(store.getId(), patientDetail
+                            .sumCurrentQuantityDrugOfStore(4, patientDetail
                                             .getTransactionDetail().getDrug().getId(),
                                     patientDetail.getTransactionDetail().getFormulation()
                                             .getId());

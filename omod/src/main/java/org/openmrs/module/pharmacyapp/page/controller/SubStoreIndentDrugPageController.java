@@ -56,7 +56,7 @@ public class SubStoreIndentDrugPageController {
         }
         InventoryStore store =null;
         if(srl!=null){
-            store = inventoryService.getStoreById(srl.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
         model.addAttribute("store",store);

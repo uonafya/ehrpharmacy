@@ -51,13 +51,13 @@ public class ViewExpiredDrugsFragmentController {
         }
         InventoryStore store = null;
         if (storeRoleRelation != null) {
-            store = inventoryService.getStoreById(storeRoleRelation.getStoreid());
+            store = inventoryService.getStoreById(4);
 
         }
 
         // ghanshyam 7-august-2013 code review bug
         if (store != null) {
-            int total = inventoryService.countViewStockBalance(store.getId(),
+            int total = inventoryService.countViewStockBalance(4,
                     categoryId, drugName, attribute, fromDate, toDate, true);
             String temp = "";
             if (categoryId != null) {
@@ -99,7 +99,7 @@ public class ViewExpiredDrugsFragmentController {
                     RequestUtil.getCurrentLink(request) + temp, pageSize,
                     currentPage, total);
             stockBalances = inventoryService
-                    .listViewStockBalance(store.getId(), categoryId, drugName, attribute,
+                    .listViewStockBalance(4, categoryId, drugName, attribute,
                             fromDate, toDate, true, pagingUtil.getStartPos(),
                             pagingUtil.getPageSize());
             List<InventoryDrugCategory> listCategory = inventoryService
