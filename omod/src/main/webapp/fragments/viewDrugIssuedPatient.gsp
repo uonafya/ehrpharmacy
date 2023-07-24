@@ -8,7 +8,7 @@
         var dateField = jq("#referred-date-field");
             var date = dateField.val();
             var phrase = jq("#phrase").val();
-            jq.getJSON('${ui.actionLink("pharmacyapp", "ViewDrugIssuedPatient", "fetchList")}',
+            jq.getJSON('${ui.actionLink("pharmacyapp", "viewDrugIssuedPatient", "fetchList")}',
                     {
                         "date": moment(date).format('DD/MM/YYYY'),
                         "phrase": phrase,
@@ -56,7 +56,7 @@
     }
 
     function displayPrintArea(id) {
-        jq.getJSON('${ui.actionLink("pharmacyapp", "ViewDrugIssuedPatient", "fetchDrugIssuedData")}',
+        jq.getJSON('${ui.actionLink("pharmacyapp", "viewDrugIssuedPatient", "fetchDrugIssuedData")}',
                 {
                     "id": id
                 }).success(function (data) {

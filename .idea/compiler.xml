@@ -10,8 +10,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="pharmacyapp" target="1.5" />
-      <module name="pharmacyapp-api" target="1.6" />
       <module name="pharmacyapp-omod" target="1.6" />
     </bytecodeTargetLevel>
   </component>

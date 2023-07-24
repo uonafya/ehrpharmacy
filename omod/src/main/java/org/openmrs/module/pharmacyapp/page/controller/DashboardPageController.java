@@ -41,23 +41,13 @@ public class DashboardPageController {
 
         List<Role> role = new ArrayList<Role>(Context.getAuthenticatedUser().getAllRoles());
         InventoryStoreRoleRelation srl = null;
-        Role rl = null;
-        for (Role r : role) {
-            if (inventoryService.getStoreRoleByName(r.toString()) != null) {
-                srl = inventoryService.getStoreRoleByName(r.toString());
-                rl = r;
-            }
-        }
         InventoryStore store = null;
         String dateStr = "";
         List<Action> listSubStoreStatus = new ArrayList<Action>();
-        if (srl != null) {
             store = inventoryService.getStoreById(4);
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
             dateStr = sdf.format(new Date());
             listSubStoreStatus = ActionValue.getListIndentSubStore();
-
-        }
         /*else{
             return "redirect: index.htm";
         }*/

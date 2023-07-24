@@ -17,7 +17,7 @@
 <script>
     jq(function (){
 
-        jq.getJSON('${ui.actionLink("pharmacyapp", "ViewStockBalanceDetail", "viewStockBalanceDetail")}',{
+        jq.getJSON('${ui.actionLink("pharmacyapp", "viewStockBalanceDetail", "viewStockBalanceDetail")}',{
 			drugId :${drugId},
 			formulationId: ${formulationId},
 			expiry: ${expiry},

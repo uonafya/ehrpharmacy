@@ -62,7 +62,7 @@ a:link {
                         updateQueueTable(data);
                     }
                 }).error(function () {
-                    jq().toastmessage('showNoticeToast', "An Error Occured while Fetching List");
+                    jq().toastmessage('showNoticeToast', "An error occurred while Fetching List");
                     jq('#indent-search-result-table > tbody > tr').remove();
                     var tbody = jq('#indent-search-result-table > tbody');
                     var row = '<tr align="center"><td colspan="5">No Drugs found</td></tr>';

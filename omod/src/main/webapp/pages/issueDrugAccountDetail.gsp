@@ -109,7 +109,7 @@
 <div id="print">
 	<center class="print-only">		
 		<h2>
-			<img width="100" height="100" align="center" title="OpenMRS" alt="OpenMRS" src="${ui.resourceLink('ehrcashier', 'images/kenya_logo.bmp')}"><br/>
+			<img width="100" height="100" align="center" title="Extended KenyaEMR" alt="Extended KenyaEMR" src="${ui.resourceLink('ehrinventoryapp', 'images/kenya_logo.bmp')}"><br/>
 			<b>
 				<u>${userLocation}</u>
 			</b>

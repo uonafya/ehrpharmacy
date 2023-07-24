@@ -36,13 +36,13 @@
 	<properties>
 		<openMRSVersion>2.3.3</openMRSVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<kenyauiVersion>2.1.1</kenyauiVersion>
-		<kenyacoreVersion>2.4.1</kenyacoreVersion>
-		<ehrinventoryVersion>2.0.0</ehrinventoryVersion>
+		<kenyauiVersion>3.0.0</kenyauiVersion>
+		<kenyacoreVersion>3.0.1</kenyacoreVersion>
+		<ehrinventoryVersion>2.0.1-SNAPSHOT</ehrinventoryVersion>
 		<appuiVersion>1.8.0</appuiVersion>
 		<uilibraryVersion>2.0.4</uilibraryVersion>
-		<kenyaemrVersion>17.0.3</kenyaemrVersion>
-		<hospitalcoreVersion>2.0.0</hospitalcoreVersion>
+		<kenyaemrVersion>18.5.1</kenyaemrVersion>
+		<hospitalcoreVersion>2.0.3-SNAPSHOT</hospitalcoreVersion>
 		<appframeworkVersion>2.9</appframeworkVersion>
 		<uiframeworkVersion>3.8</uiframeworkVersion>
 		<metadatadeployVersion>1.3</metadatadeployVersion>

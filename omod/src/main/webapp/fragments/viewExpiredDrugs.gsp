@@ -37,7 +37,7 @@
 				ExpiryTable(data);
 			}
 		}).error(function () {
-			jq().toastmessage('showErrorToast', "An Error Occured while Fetching List");
+			jq().toastmessage('showErrorToast', "An Error Occurred while Fetching List");
 			
 			jq('#expiry-list-table > tbody > tr').remove();
 			var tbody = jq('#expiry-list-table > tbody');

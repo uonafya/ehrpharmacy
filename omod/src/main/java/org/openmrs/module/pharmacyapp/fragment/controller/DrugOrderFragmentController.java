@@ -20,11 +20,6 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-/**
- * @author Stanslaus Odhiambo
- *         Created on 4/8/2016.
- */
 public class DrugOrderFragmentController {
 
     public List<SimpleObject> listReceiptDrugAvailable(

@@ -13,9 +13,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by qqnarf on 4/6/16.
- */
 public class ViewStockBalanceDetailFragmentController {
     public void controller() {
 

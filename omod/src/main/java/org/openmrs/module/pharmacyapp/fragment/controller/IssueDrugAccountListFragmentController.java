@@ -25,11 +25,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.math.BigDecimal;
 import java.util.*;
 
-
-/**
- * @author Stanslaus Odhiambo
- *         Created on 3/29/2016.
- */
 public class IssueDrugAccountListFragmentController {
     public void controller() {
 

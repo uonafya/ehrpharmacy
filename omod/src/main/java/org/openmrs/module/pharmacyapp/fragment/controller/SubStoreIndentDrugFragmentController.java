@@ -15,10 +15,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author Stanslaus Odhiambo
- *         Created on 4/4/2016.
- */
 public class SubStoreIndentDrugFragmentController {
 
     public String saveIndentSlip(HttpServletRequest request) {

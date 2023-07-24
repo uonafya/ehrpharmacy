@@ -53,7 +53,7 @@
     }
 
     function getStockList(drugName, categoryId, attribute) {
-        jq.getJSON('${ui.actionLink("pharmacyapp", "ViewDrugStock", "list")}',
+        jq.getJSON('${ui.actionLink("pharmacyapp", "viewDrugStock", "list")}',
         {
             drugName: drugName,
             categoryId: categoryId,
@@ -71,7 +71,7 @@
 
             }
         }).error(function () {
-            jq().toastmessage('showErrorToast', "An Error Occured while Fetching List");
+            jq().toastmessage('showErrorToast', "An Error Occurred while Fetching List");
             jq('#stock-list-table > tbody > tr').remove();
             var tbody = jq('#stock-list-table > tbody');
             var row = '<tr align="center"><td colspan="7">No drugs found</td></tr>';
@@ -192,13 +192,6 @@
 
 	</div>
 </div>
-
-
-
-
-
-
-
 
 <div>
     

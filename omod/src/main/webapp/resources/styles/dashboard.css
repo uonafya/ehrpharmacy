@@ -107,3 +107,17 @@
     top: 59.7%;
     width: 17.8%;
 }
+
+#main-dashboard #summary{
+	border: 1px none #ddd;
+    cursor: pointer;
+    float: left;
+    height: 14.7%;
+    left: 20.6%;
+    padding: 13px 0 0;
+    position: relative;
+    text-align: center;
+    top: 23.7%;
+    width: 17.8%;
+    background-color: #ABBAEA;
+}

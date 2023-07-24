@@ -18,6 +18,7 @@ import org.openmrs.ui.framework.UiUtils;
 import org.openmrs.ui.framework.page.PageModel;
 import org.openmrs.ui.framework.page.PageRequest;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.openmrs.module.kenyaemr.api.KenyaEmrService;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -36,7 +37,7 @@ public class PrintDrugOrderPageController {
                     PageRequest pageRequest,
                     UiUtils uiUtils) {
 
-        model.addAttribute("userLocation", Context.getAdministrationService().getGlobalProperty("hospital.location_user"));
+        model.addAttribute("userLocation", Context.getService(KenyaEmrService.class).getDefaultLocation());
         InventoryService inventoryService = Context.getService(InventoryService.class);
         List<Role> role = new ArrayList<Role>(Context.getAuthenticatedUser().getAllRoles());
 

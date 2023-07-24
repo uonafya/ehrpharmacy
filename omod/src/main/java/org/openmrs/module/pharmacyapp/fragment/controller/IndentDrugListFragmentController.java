@@ -19,9 +19,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by ngarivictor on 3/22/2016.
- */
 public class IndentDrugListFragmentController {
     public void controller() {
 

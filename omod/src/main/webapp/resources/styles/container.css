@@ -74,6 +74,7 @@ td a:hover{
 #expired-div .show-icon,
 #patients-div .show-icon,
 #dispense-div .show-icon,
+#summary-div .show-icon,
 #accounts-div .show-icon {
 	display: inline-block;
     float: right;
@@ -88,6 +89,9 @@ td a:hover{
 
 #dispense-div .show-icon {
     background: rgba(0, 0, 0, 0) url("../images/dispense.png") no-repeat scroll 0 0 / 100% auto;
+}
+#summary-div .show-icon {
+    background: rgba(0, 0, 0, 0) url("../images/drugs-icon.jpg") no-repeat scroll 0 0 / 100% auto;
 }
 
 #patients-div .show-icon {
@@ -112,6 +116,15 @@ td a:hover{
 	left: auto;
 	margin-left: -29px;
 	margin-top: 4px !important;
+	position: absolute;
+}
+
+#summary-div .add-on {
+	color: #f26522;
+	float: right;
+	left: auto;
+	margin-left: -29px;
+	margin-top: 5px !important;
 	position: absolute;
 }
 

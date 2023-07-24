@@ -21,9 +21,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by USER on 3/30/2016.
- */
 public class ViewDrugStockFragmentController {
     public void controller(){
 

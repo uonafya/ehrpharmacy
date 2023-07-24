@@ -24,10 +24,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-
-/**
- * Created by USER on 3/31/2016.
- */
 public class ViewDrugIssuedPatientFragmentController {
     public void controller (){
 

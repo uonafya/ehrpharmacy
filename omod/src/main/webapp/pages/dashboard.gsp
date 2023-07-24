@@ -18,7 +18,7 @@
 	jq(function () {
 		var redirectLink = '';
 		
-		jq('#queue, #dispense, #patient, #stock, #expired, #accounts, #indent').on('click', function(){
+		jq('#queue, #dispense, #patient, #stock, #expired, #accounts, #indent, #summary').on('click', function(){
 			if (jq(this).attr('id') == 'queue'){
 				redirectLink = 'patients-queue';
 			}
@@ -40,6 +40,9 @@
 			else if (jq(this).attr('id') == 'indent'){
 				redirectLink = 'indent-drugs';
 			}
+			else if (jq(this).attr('id') == 'summary'){
+                redirectLink = 'dispense-summaries';
+            }
 			else{
 				return false;
 			}
@@ -54,8 +57,6 @@
 			var m=0.5306122;
 			
 			d.height((d.width()*m));
-			
-			console.log(d.height());
 		}).resize();
 		
 	});
@@ -72,7 +73,7 @@
 
 			<li>
 				<i class="icon-chevron-right link"></i>
-				Pharmacy Dasboard
+				Pharmacy Dashboard
 			</li>
 		</ul>
 	</div>
@@ -96,7 +97,6 @@
 		<i class="icon-exchange"></i><br/>
 		<span>DISPENSE DRUGS</span>	
 	</div>
-	
 	<div id="patient">
 		<i class="icon-user"></i><br/>
 		<span>ISSUE TO PATIENT</span>	
@@ -121,5 +121,9 @@
 		<i class="icon-retweet"></i><br/>
 		<span>ORDER DRUGS</span>
 	</div>
+	<div id="summary">
+        <i class="icon-paper-clip"></i><br/>
+        <span>DISPENSED DRUGS SUMMARIES</span>
+    </div>
 </div>
 

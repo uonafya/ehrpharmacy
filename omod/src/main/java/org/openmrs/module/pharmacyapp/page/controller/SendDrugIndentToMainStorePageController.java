@@ -1,10 +1,5 @@
 package org.openmrs.module.pharmacyapp.page.controller;
 
-/**
- * @author Stanslaus Odhiambo
- * Created on 4/1/2016.
- */
-
 import org.openmrs.api.context.Context;
 import org.openmrs.module.appui.UiSessionContext;
 import org.openmrs.module.hospitalcore.model.InventoryStoreDrugIndent;

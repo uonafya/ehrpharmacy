@@ -770,7 +770,7 @@
 			<div id="print-section">
 				<div class="print-only">
 					<center>
-						<img width="100" height="100" align="center" title="AfyaEHMS" alt="AfyaEHMS" src="${ui.resourceLink('billingui', 'images/kenya_logo.bmp')}">
+						<img width="100" height="100" align="center" title="Extended KenyaEMR" alt="Extended KenyaEMR+" src="${ui.resourceLink('ehrinventoryapp', 'images/kenya_logo.bmp')}">
 						<h2>
 							${userLocation}<br/>
 							PRESCRIBED DRUGS						
@@ -944,8 +944,8 @@
 
         <center>
 
-            <img width="100" height="100" align="center" title="OpenMRS" alt="OpenMRS"
-                 src="${ui.resourceLink('ehrcashier', 'images/kenya_logo.bmp')}">
+            <img width="100" height="100" align="center" title="Extended KenyaEMR" alt="Extended KenyaEMR"
+                 src="${ui.resourceLink('ehrinventoryapp', 'images/kenya_logo.bmp')}">
         </center>
 
         <h2>

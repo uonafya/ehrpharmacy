@@ -20,11 +20,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-/**
- * @author Stanslaus Odhiambo
- *         Created on 4/19/2016.
- */
 public class SubStoreListDispenseFragmentController {
     public void controller() {
 

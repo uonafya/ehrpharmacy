@@ -12,11 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * @author Stanslaus Odhiambo
- *         Created on 4/7/2016.
- */
 public class AddReceiptsToStoreFragmentController {
 
     public List<SimpleObject> fetchDrugNames(@RequestParam(value = "categoryId") int categoryId, UiUtils uiUtils) {

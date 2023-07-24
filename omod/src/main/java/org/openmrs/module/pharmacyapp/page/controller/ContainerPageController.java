@@ -99,7 +99,13 @@ public class ContainerPageController {
                 model.addAttribute("fragment", "indentDrugList");
                 model.addAttribute("title", "Order Drugs");
                 model.addAttribute("header", "ORDER DRUGS");
-            } else {
+            }
+            else if (rel.equals("dispense-summaries")) {
+                model.addAttribute("fragment", "dispenseSummaries");
+                model.addAttribute("title", "Dispense Drugs Summaries");
+                model.addAttribute("header", "DISPENSE DRUGS TO PATIENT SUMMARIES");
+            }
+            else {
                 model.addAttribute("fragment", "404");
                 model.addAttribute("title", "404");
                 model.addAttribute("header", "404");

@@ -86,7 +86,7 @@
 
 			}
 		}).error(function () {
-			jq().toastmessage('showNoticeToast', "An Error Occured while Fetching List");
+			jq().toastmessage('showNoticeToast', "An Error occurred while Fetching List");
 			jq('#issue-drug-account-list-table > tbody > tr').remove();
 			var tbody = jq('#issue-drug-account-list-table > tbody');
 			var row = '<tr align="center"><td colspan="5">No Accounts found</td></tr>';

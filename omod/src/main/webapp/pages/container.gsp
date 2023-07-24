@@ -4,7 +4,6 @@
 
 	ui.includeJavascript("ehrconfigs", "jquery-ui-1.9.2.custom.min.js")
 	ui.includeJavascript("ehrconfigs", "moment.js")
-	ui.includeJavascript("ehrcashier", "moment.js")
 	ui.includeJavascript("ehrconfigs", "underscore-min.js")
 	ui.includeJavascript("ehrconfigs", "knockout-3.4.0.js")
 	ui.includeJavascript("ehrconfigs", "emr.js")
