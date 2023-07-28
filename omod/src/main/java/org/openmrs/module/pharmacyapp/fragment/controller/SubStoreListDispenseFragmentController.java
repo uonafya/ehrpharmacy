@@ -131,4 +131,18 @@ public class SubStoreListDispenseFragmentController {
         return dispenseList;
 
     }
+    public SimpleObject getDispenseAggregateSummary(@RequestParam(value = "fromDate", required = false) String fromDate,
+                                                     @RequestParam(value = "toDate", required = false) String toDate,UiUtils utils ) {
+        SimpleObject simpleObject = new SimpleObject();
+        InventoryService inventoryService = Context.getService(InventoryService.class);
+        List<InventoryStoreDrugPatient> listIssue = inventoryService.listStoreDrugPatient(4, null, "", fromDate, toDate,0, 1000000);
+
+        //orders pending confirmation
+
+        int pendingConfirmation = inventoryService
+        simpleObject.put("pendingConfirmation","20");
+        simpleObject.put("totalDispenced", (!listIssue.isEmpty()) ? listIssue.size() : 0);
+        simpleObject.put("pendingDispensation","50");
+        return SimpleObject.fromObject(simpleObject, utils,"pendingConfirmation","totalDispenced","pendingDispensation" );
+    }
 }

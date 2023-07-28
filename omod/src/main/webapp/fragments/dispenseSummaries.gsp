@@ -1,99 +1,187 @@
 <% ui.includeJavascript("ehrconfigs", "moment.js") %>
-%>
-<script>
-jq(function () {
-    jQuery('.date-pick').datepicker({minDate: '-100y', dateFormat: 'dd/mm/yy'});
-    jq('#toDate, #fromDate').change(function(){
-        pullRecords();
-    });
+<script stype="text/javascript">
+    jQuery(function () {
+        jq("#ptabs").tabs();
+        populateData();
+        jq("#filter").click(function () {
+            populateData();
+        });
+        var redirectLink = '';
 
-    function IssuedDrugViewModel() {
-                var self = this;
-                // Editable data
-                self.drugDispenseList = ko.observableArray([]);
-                var mappedDrugItems = jQuery.map(receiptsData, function (item) {
-                    if((item.values===0)&&(item.statuss===1)){
-                        return item;
-                    }else if((item.values!==0)&&(item.statuss===1)){
-                        return item;
-                    }else{
-    //                    do nothing, the item has not been processed from the cashier side
-                    }
-
-                });
-
-                self.drugDispenseList(mappedDrugItems);
-                self.viewDetails = function (item) {
-                    var url = '${ui.pageLink("pharmacyapp","printDrugOrder")}';
-                    window.location.href = url + "?issueId=" + item.id;
-                };
+        jq('#pending, #dispense, #queue').on('click', function () {
+            if (jq(this).attr('id') == 'queue'){
+                redirectLink = 'patients-queue';
+            }else if (jq(this).attr('id') == 'dispense') {
+                redirectLink = 'dispense-drugs';
+            } else if (jq(this).attr('id') == 'pending') {
+                redirectLink = 'dispense-drugs';
+            } else {
+                return false;
             }
-    function pullRecords(){
-        var issueName	= jq("#dIssuedName").val();
-        var fromDate 	= moment(jq("#fromDate-field").val()).format('DD/MM/YYYY');
-        var toDate 		= moment(jq("#toDate-field").val()).format('DD/MM/YYYY');
-        var receiptId 	= jq("#dReceiptId").val();
-        var results 	= getOrderList(issuedName, fromDate, toDate, receiptId);
-        list.drugDispensedList(results);
-    }
-    var list = new IssuedDrugViewModel();
-            ko.applyBindings(list, jq("#orderDrugList")[0]);
 
-    		pullRecords();
-});
-function getOrderList(searchIssueName, fromDate, toDate, receiptId) {
-
-        jQuery.ajax({
-            type: "GET",
-            url: '${ui.actionLink("pharmacyapp", "subStoreListDispense", "getDispenseList")}',
-            dataType: "json",
-            global: false,
-            async: false,
-            data: {
-                searchIssueName: searchIssueName,
-                fromDate: fromDate,
-                toDate: toDate,
-                processed: processed,
-                receiptId: receiptId
-            },
-            success: function (data) {
-                toReturn = data;
-            }
+            window.location.href = ui.pageLink("pharmacyapp", "container", {
+                rel: redirectLink
+            });
         });
 
-        return toReturn;
+        jq(window).resize(function () {
+            var d = jq('#main-dashboard');
+            var m = 0.5306122;
+
+            d.height((d.width() * m));
+        }).resize();
+    })
+
+
+    function populateData() {
+        const summaryFromDate = jq('#summaryFromDate-field').val(), summaryToDate = jq('#summaryToDate-field').val();
+        console.log(summaryFromDate, "####", summaryToDate)
+        jq.getJSON('${ui.actionLink("ehrcashier", "subStoreIssueDrugList", "getOrderList")}',
+            {
+                "fromDate": summaryFromDate,
+                "toDate": summaryToDate,
+                "issueName":"",
+                "processed":0,
+                "receiptId":""
+
+            }
+        ).success(function (data) {
+            jq('.stat-digit').eq(0).html(data.length)
+        })
+        jq.getJSON('${ui.actionLink("pharmacyapp", "queue", "searchPatient")}',
+            {
+                "date": summaryFromDate,
+                "toDate": summaryToDate,
+                "searchKey":"",
+                "currentPage":""
+
+            }
+        ).success(function (data) {
+            jq('.stat-digit').eq(0).html(data.length)
+        })
+        jq.getJSON('${ui.actionLink("pharmacyapp", "subStoreListDispense", "getDispenseAggregateSummary")}',
+            {
+                "fromDate": summaryFromDate,
+                "toDate": summaryToDate,
+            }
+        ).success(function (data) {
+            console.log("Data received:", data);
+            jq('.stat-digit').eq(1).html(data.pendingConfirmation)
+            jq('.stat-digit').eq(2).html(data.totalDispenced)
+            jq('.stat-digit').eq(3).html(data.pendingDispensation)
+        });
     }
 </script>
 <style>
-	#divSeachProcessed{
-		margin-right: 5px;
-		margin-top: 23px;
-	}
-	#divSeachProcessed label{
-		cursor: pointer;
-	}
-	#divSeachProcessed input{
-		cursor: pointer;
-	}
-	.process-lozenge {
-		border: 1px solid #f00;
-		border-radius: 4px;
-		color: #f00;
-		display: inline-block;
-		font-size: 0.7em;
-		padding: 1px 2px;
-		vertical-align: text-bottom;
-	}
-	.process-seen {
-		background: #fff799 none repeat scroll 0 0 !important;
-		color: #000 !important;
-	}
-	a:link {
-		color: blue;
-		text-decoration: none;
-		cursor: pointer;
-	}
+#divSeachProcessed {
+    margin-right: 5px;
+    margin-top: 23px;
+}
+
+#divSeachProcessed label {
+    cursor: pointer;
+}
+
+#divSeachProcessed input {
+    cursor: pointer;
+}
+
+.process-lozenge {
+    border: 1px solid #f00;
+    border-radius: 4px;
+    color: #f00;
+    display: inline-block;
+    font-size: 0.7em;
+    padding: 1px 2px;
+    vertical-align: text-bottom;
+}
+
+.process-seen {
+    background: #fff799 none repeat scroll 0 0 !important;
+    color: #000 !important;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html, body, #graph-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-counter {
+    box-shadow: 2px 2px 10px #DADADA;
+    margin: 5px;
+    padding: 20px 10px;
+    background-color: #fff;
+    height: 100px;
+    border-radius: 5px;
+    transition: .3s linear all;
+}
+
+.card-counter:hover {
+    box-shadow: 4px 4px 20px #DADADA;
+    transition: .3s linear all;
+}
+
+.card-counter.primary {
+    background-color: #B0E0E6;
+    color: black;
+}
+
+.card-counter.danger {
+    background-color: #E6E6FA;
+    color: black;
+}
+
+.card-counter.pham {
+    background-color: #E0FFFF;
+    color: black;
+}
+
+.card-counter.success {
+    background-color: #A9FF96;
+    color: black;
+}
+
+.card-counter.info {
+    background-color: #FFA07A;
+    color: black;
+}
+
+.card-counter i {
+    font-size: 2.5em;
+    opacity: 0.2;
+}
+
+.card-counter .count-numbers {
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    font-size: 20px;
+    display: block;
+}
+
+.card-counter .count-name {
+    position: absolute;
+    right: 35px;
+    top: 65px;
+    font-style: italic;
+    text-transform: capitalize;
+    opacity: 0.5;
+    display: block;
+    font-size: 15px;
+}
 </style>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
 <div class="clear"></div>
 <div id="summary-div">
     <div class="container">
@@ -119,82 +207,84 @@ function getOrderList(searchIssueName, fromDate, toDate, receiptId) {
         <div class="patient-header new-patient-header">
             <div class="demographics">
                 <h1 class="name" style="border-bottom: 1px solid #ddd;">
-                    <span>DRUGS DISPENSED LIST &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                    <span>PHARMACY SUMMARIES  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
                 </h1>
             </div>
 
             <div class="show-icon">
                 &nbsp;
             </div>
-            <div class="filter">
-                <i class="icon-filter" style="color: rgb(91, 87, 166); float: left; font-size: 52px ! important; padding: 0px 10px 0px 0px;"></i>
-                <div class="first-col">
-                    <label for="dIssuedName">Patient Name</label><br/>
-                    <input type="text" name="dIssuedName" id="dIssuedName" placeholder="Patient Name" class="dispenseSearch"/>
-                </div>
-
-                <div class="first-col">
-                    <label for="fromDate-display">From Date</label><br/>
-                    ${ui.includeFragment("uicommons", "field/datetimepicker", [id: 'fromDate', label: 'Date', formFieldName: 'fromDate', useTime: false, defaultToday: true])}
-                </div>
-
-                <div class="first-col">
-                    <label for="toDate-display">To Date</label><br/>
-                    ${ui.includeFragment("uicommons", "field/datetimepicker", [id: 'toDate',   label: 'Date', formFieldName: 'toDate',   useTime: false, defaultToday: true])}
-                </div>
-
-                <div class="first-col">
-                    <label for="dReceiptId">Receipt No.</label><br/>
-                    <input type="text" name="dReceiptId" id="dReceiptId" placeholder="Receipt No." class="dispenseSearch"/>
-                </div>
-            </div>
         </div>
     </div>
 </div>
-<form method="get" id="form">
-    <div id="orderDrugList">
-        <table width="100%" cellpadding="5" cellspacing="0">
-            <thead>
-				<tr>
-					<th>#</th>
-					<th>RECEIPT#</th>
-					<th>IDENTIFIER</th>
-					<th>NAME</th>
-					<th>DATE</th>
-					<th>ACTION</th>
-				</tr>
-            </thead>
-            <tbody data-bind="foreach: drugDispenseList">
-            <tr data-bind="css: {'process-seen': flag == 2}">
-                <td data-bind="text: \$index() + 1"></td>
-                <td data-bind="text: id"></td>
-                <td data-bind="text: identifier"></td>
-                <td>
-                    <span data-bind="text: givenName"></span>&nbsp;
-                    <span data-bind="text: familyName"></span>&nbsp;
-                    <span data-bind="text: middleName"></span>
-                    <span data-bind="visible: flag == 2" class="process-lozenge">Processed</span>
-                </td>
-                <td data-bind="text: moment(new Date(createdOn)).format('DD, MMM YYYY')"></td>
-                <td>
-                    <a class="remover" href="#" data-bind="click: \$root.viewDetails"
-                       title="Detail issue drug to this patient">
-						<span data-bind="visible: flag == 1">
-							<i class="icon-cogs small"></i>
-							PROCESS
-						</span>
 
-						<span data-bind="visible: flag == 2">
-							<i class="icon-bar-chart small"></i>
-							VIEW
-						</span>
-                    </a>
-                </td>
+<div class="ke-panel-frame">
+    <div class="ke-panel-content">
+        <br/>
 
-            </tr>
-            </tbody>
-        </table>
+        <div class="row">
+            <div class="col-12">
+                <div style="margin-top: -1px " class="onerow">
+                    <i class="icon-filter" style="font-size: 26px!important; color: #5b57a6"></i>
+                    <label>&nbsp;&nbsp;From&nbsp;</label>${ui.includeFragment("uicommons", "field/datetimepicker", [formFieldName: 'fromDate', id: 'summaryFromDate', label: '', useTime: false, defaultToday: false, class: ['newdtp']])}
+                    <label>&nbsp;&nbsp;To&nbsp;</label>${ui.includeFragment("uicommons", "field/datetimepicker", [formFieldName: 'toDate', id: 'summaryToDate', label: '', useTime: false, defaultToday: false, class: ['newdtp']])}
+                    <button id="filter" type="button" class=" btn task right">${ui.message("Filter")}</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="ptabs">
+            <ul>
+                <li><a href="#orders">Orders Summary</a></li>
+            </ul>
+            <div class="ke-panel-frame" id="orders">
+            <div class="row">
+                <div class="col-md-12">
+                    <hr/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="card-counter pham">
+                                <i class="fa fa-plus-circle"></i>
+                                <span class="count-name stat-text">Cashpoint</span>
+                                <span class="count-numbers stat-digit"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" id="queue">
+                            <div class="card-counter danger">
+                                <i class="fa fa-users"></i>
+                                <span class="count-name stat-text">Pending Confirmation</span>
+                                <span class="count-numbers stat-digit"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" id="dispense">
+                            <div class="card-counter danger">
+                                <i class="icon-exchange"></i>
+                                <span class="count-name stat-text">Dispensed</span>
+                                <span class="count-numbers stat-digit"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" id="pending">
+                            <div class="card-counter primary">
+                                <i class="icon-retweet"></i>
+                                <span class="count-name stat-text">Pending Dispensation</span>
+                                <span class="count-numbers stat-digit"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
     </div>
-</form>
-
-<div class="footer">&nbsp;</div>
+</div>
