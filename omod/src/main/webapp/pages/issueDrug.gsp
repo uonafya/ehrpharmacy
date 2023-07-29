@@ -423,36 +423,65 @@
         jq("#searchPhrase").autocomplete({
             minLength: 3,
             source: function (request, response) {
-                jq.getJSON('${ ui.actionLink("pharmacyapp", "addReceiptsToStore", "fetchDrugListByName") }',
-                        {
-                            searchPhrase: request.term
-                        }
-                ).success(function (data) {
-                            var results = [];
-                            for (var i in data) {
-                                var result = {label: data[i].name, value: data[i]};
-                                results.push(result);
-                            }
-                            response(results);
-                        });
-            },
-            focus: function (event, ui) {
-                jq("#searchPhrase").val(ui.item.value.name);
-                return false;
+                jq.getJSON('${ ui.actionLink("pharmacyapp", "addReceiptsToStore", "fetchDrugListByName") }', {
+                    searchPhrase: request.term
+                }).done(function (data) {
+                    response(jq.map(data, function (item) {
+                        return {
+                            label: item.name,
+                            value: item
+                        };
+                    }));
+                });
             },
             select: function (event, ui) {
-                event.preventDefault();
-                jQuery("#searchPhrase").val(ui.item.value.name);
-
-                //set parent category
+                console.log("Selected drug:", ui.item.label);
+                jq(this).val(ui.item.label);
                 var catId = ui.item.value.category.id;
                 var drgId = ui.item.value.id;
+
+                console.log("Category ID:", catId);
+                console.log("Drug ID:", drgId);
                 jq("#issueDrugCategory").val(catId).change();
-                //set background drug name - frusemide
                 jq('#drugPatientName').val(drgId);
 
+                event.preventDefault(); // Prevent default behavior of the select event
 
+                // Close the autocomplete dropdown
+                jq("#searchPhrase").autocomplete("close");
+
+                // Trigger the change event on the issueDrugCategory element
+                jq("#issueDrugCategory").trigger("change");
+
+                return false; // Prevent further event propagation
             }
+        }).data("ui-autocomplete")._renderItem = function (ul, item) {
+            return jq("<li>")
+                .append("<div>" + item.label + "</div>")
+                .appendTo(ul)
+                .on("click", function () {
+                    jq("#searchPhrase").val(item.label);
+                    var catId = item.value.category.id;
+                    var drgId = item.value.id;
+
+                    console.log("Selected drug:", item.label);
+                    console.log("Category ID:", catId);
+                    console.log("Drug ID:", drgId);
+                    jq("#issueDrugCategory").val(catId).change();
+                    jq('#drugPatientName').val(drgId);
+
+                    // Close the autocomplete dropdown
+                    jq("#searchPhrase").autocomplete("close");
+
+                    // Trigger the change event on the issueDrugCategory element
+                    jq("#issueDrugCategory").trigger("change");
+
+                    return false; // Prevent further event propagation
+                });
+        };
+
+        jq("#searchPhrase").on("autocompletefocus", function (event, ui) {
+            event.preventDefault(); // Prevent the input field from being updated with the focused item's value
         });
 
 
