@@ -35,7 +35,6 @@
 
     function populateData() {
         const summaryFromDate = jq('#summaryFromDate-field').val(), summaryToDate = jq('#summaryToDate-field').val();
-        console.log(summaryFromDate, "####", summaryToDate)
         jq.getJSON('${ui.actionLink("ehrcashier", "subStoreIssueDrugList", "getOrderList")}',
             {
                 "fromDate": summaryFromDate,
@@ -48,16 +47,21 @@
         ).success(function (data) {
             jq('.stat-digit').eq(0).html(data.length)
         })
-        jq.getJSON('${ui.actionLink("pharmacyapp", "queue", "searchPatient")}',
-            {
-                "date": summaryFromDate,
-                "toDate": summaryToDate,
-                "searchKey":"",
-                "currentPage":""
-
-            }
-        ).success(function (data) {
-            jq('.stat-digit').eq(0).html(data.length)
+        jq.getJSON('${ui.actionLink("pharmacyapp", "subStoreListDispense", "getDispenseList")}',
+                    {
+                        "fromDate": summaryFromDate,
+                        "toDate": summaryToDate,
+                        "searchIssueName":"",
+                        "processed":1,
+                        "receiptId":""
+                    }
+                ).success(function (data) {
+                    var totalDispensed=0; var totalPendingDispense =0;
+                data.map(item => {
+                    (item.flag=1)?(totalDispensed++):(totalPendingDispense++)
+                });
+                    jq('.stat-digit').eq(2).html(totalDispensed)
+                    jq('.stat-digit').eq(3).html(totalPendingDispense)
         })
         jq.getJSON('${ui.actionLink("pharmacyapp", "subStoreListDispense", "getDispenseAggregateSummary")}',
             {
@@ -67,8 +71,6 @@
         ).success(function (data) {
             console.log("Data received:", data);
             jq('.stat-digit').eq(1).html(data.pendingConfirmation)
-            jq('.stat-digit').eq(2).html(data.totalDispenced)
-            jq('.stat-digit').eq(3).html(data.pendingDispensation)
         });
     }
 </script>
@@ -184,7 +186,7 @@ html, body, #graph-container {
 
 <div class="clear"></div>
 <div id="summary-div">
-    <div class="container">
+    <div class="container" style="margin: 0;">
         <div class="example">
             <ul id="breadcrumbs">
                 <li>

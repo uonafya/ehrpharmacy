@@ -3,6 +3,8 @@ package org.openmrs.module.pharmacyapp.fragment.controller;
 import org.apache.commons.lang.StringUtils;
 import org.openmrs.Role;
 import org.openmrs.api.context.Context;
+import org.openmrs.module.hospitalcore.PatientDashboardService;
+import org.openmrs.module.hospitalcore.model.OpdDrugOrder;
 import org.openmrs.module.hospitalcore.model.InventoryStore;
 import org.openmrs.module.hospitalcore.model.InventoryStoreDrugPatient;
 import org.openmrs.module.hospitalcore.model.InventoryStoreDrugPatientDetail;
@@ -135,14 +137,10 @@ public class SubStoreListDispenseFragmentController {
                                                      @RequestParam(value = "toDate", required = false) String toDate,UiUtils utils ) {
         SimpleObject simpleObject = new SimpleObject();
         InventoryService inventoryService = Context.getService(InventoryService.class);
-        List<InventoryStoreDrugPatient> listIssue = inventoryService.listStoreDrugPatient(4, null, "", fromDate, toDate,0, 1000000);
-
+        int toIssueCount = inventoryService.countStoreDrugPatient(4, "", startDate, endDate);
         //orders pending confirmation
-
-        int pendingConfirmation = inventoryService
-        simpleObject.put("pendingConfirmation","20");
-        simpleObject.put("totalDispenced", (!listIssue.isEmpty()) ? listIssue.size() : 0);
-        simpleObject.put("pendingDispensation","50");
-        return SimpleObject.fromObject(simpleObject, utils,"pendingConfirmation","totalDispenced","pendingDispensation" );
+        List<OpdDrugOrder> pendingOrders = Context.getService(PatientDashboardService.class).getOpdDrugOrderByDateRange( fromDate, toDate, 0);
+        simpleObject.put("pendingConfirmation",(!pendingOrders.isEmpty())?pendingOrders.size():0);
+        return SimpleObject.fromObject(simpleObject, utils,"pendingConfirmation" );
     }
 }
