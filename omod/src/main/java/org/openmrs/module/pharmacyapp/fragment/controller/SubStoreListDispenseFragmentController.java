@@ -133,8 +133,11 @@ public class SubStoreListDispenseFragmentController {
         return dispenseList;
 
     }
-    public SimpleObject getDispenseAggregateSummary(@RequestParam(value = "fromDate", required = false) String fromDate,
-                                                     @RequestParam(value = "toDate", required = false) String toDate,UiUtils utils ) {
+    public SimpleObject getDispenseAggregateSummary(@RequestParam(value = "fromDate", required = false) Date fromDate,
+                                                     @RequestParam(value = "toDate", required = false) Date toDate,UiUtils utils ) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String startDate = sdf.format(fromDate) + " 00:00:00";
+        String endDate = sdf.format(toDate) + " 23:59:59";
         SimpleObject simpleObject = new SimpleObject();
         InventoryService inventoryService = Context.getService(InventoryService.class);
         int toIssueCount = inventoryService.countStoreDrugPatient(4, "", startDate, endDate);
