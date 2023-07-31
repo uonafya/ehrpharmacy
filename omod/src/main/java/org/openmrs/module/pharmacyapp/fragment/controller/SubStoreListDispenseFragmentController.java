@@ -3,6 +3,8 @@ package org.openmrs.module.pharmacyapp.fragment.controller;
 import org.apache.commons.lang.StringUtils;
 import org.openmrs.Role;
 import org.openmrs.api.context.Context;
+import org.openmrs.module.hospitalcore.PatientDashboardService;
+import org.openmrs.module.hospitalcore.model.OpdDrugOrder;
 import org.openmrs.module.hospitalcore.model.InventoryStore;
 import org.openmrs.module.hospitalcore.model.InventoryStoreDrugPatient;
 import org.openmrs.module.hospitalcore.model.InventoryStoreDrugPatientDetail;
@@ -130,5 +132,18 @@ public class SubStoreListDispenseFragmentController {
 
         return dispenseList;
 
+    }
+    public SimpleObject getDispenseAggregateSummary(@RequestParam(value = "fromDate", required = false) Date fromDate,
+                                                     @RequestParam(value = "toDate", required = false) Date toDate,UiUtils utils ) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String startDate = sdf.format(fromDate) + " 00:00:00";
+        String endDate = sdf.format(toDate) + " 23:59:59";
+        SimpleObject simpleObject = new SimpleObject();
+        InventoryService inventoryService = Context.getService(InventoryService.class);
+        int toIssueCount = inventoryService.countStoreDrugPatient(4, "", startDate, endDate);
+        //orders pending confirmation
+        List<OpdDrugOrder> pendingOrders = Context.getService(PatientDashboardService.class).getOpdDrugOrderByDateRange( fromDate, toDate, 0);
+        simpleObject.put("pendingConfirmation",(!pendingOrders.isEmpty())?pendingOrders.size():0);
+        return SimpleObject.fromObject(simpleObject, utils,"pendingConfirmation" );
     }
 }
