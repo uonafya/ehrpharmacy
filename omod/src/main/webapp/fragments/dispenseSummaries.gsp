@@ -58,7 +58,7 @@
                 ).success(function (data) {
                     var totalDispensed=0; var totalPendingDispense =0;
                 data.map(item => {
-                    (item.flag=1)?(totalDispensed++):(totalPendingDispense++)
+                    (item.flag==1)?(totalDispensed++):(totalPendingDispense++)
                 });
                     jq('.stat-digit').eq(2).html(totalDispensed)
                     jq('.stat-digit').eq(3).html(totalPendingDispense)
