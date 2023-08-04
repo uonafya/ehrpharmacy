@@ -5,55 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52be932b-ce8d-4084-9f70-af680c2880e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/DispenseSummariesFragmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/dispenseSummaries.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jknack_handlebars_1_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_annotations_4_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mozilla_rhino_1_7R4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appframework_api_2_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_uilibrary_api_2_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pharmacyapp-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pharmacyapp-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/AddReceiptsToStoreFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/AddReceiptsToStoreFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/DrugOrderFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/DrugOrderFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/IndentDrugListFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/IndentDrugListFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/IssueDrugAccountListFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/IssueDrugAccountListFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/QueueFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/QueueFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/SubStoreIndentDrugFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/SubStoreIndentDrugFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/SubStoreListDispenseFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/SubStoreListDispenseFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/ViewDrugIssuedPatientFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/ViewDrugIssuedPatientFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/ViewDrugStockFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/ViewDrugStockFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/ViewExpiredDrugsFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/ViewExpiredDrugsFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/ViewStockBalanceDetailFragmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/fragment/controller/ViewStockBalanceDetailFragmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ContainerPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/ContainerPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/DashboardPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/DashboardPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/PrintDrugOrderPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/PrintDrugOrderPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/SendDrugIndentToMainStorePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/pharmacyapp/page/controller/SendDrugIndentToMainStorePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/indentDrugList.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/indentDrugList.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/issueDrugAccountList.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/issueDrugAccountList.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewDrugIssuedPatient.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewDrugIssuedPatient.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewDrugStock.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewDrugStock.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewExpiredDrugs.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/viewExpiredDrugs.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/container.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/container.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/dashboard.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/dashboard.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/drugOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/drugOrder.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/indentDrugDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/indentDrugDetail.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/fragments/dispenseSummaries.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/fragments/dispenseSummaries.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrug.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrug.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrugAccountDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/issueDrugAccountDetail.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/printDrugOrder.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/printDrugOrder.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewCurrentStockBalanceDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewCurrentStockBalanceDetail.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewStockBalanceDetail.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/pages/viewStockBalanceDetail.gsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/styles/container.css" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/styles/container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/webapp/resources/styles/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/webapp/resources/styles/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pharmacyapp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,17 +46,17 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "2.x",
-    "last_opened_file_path": "/Users/ningosi/workspace/extendedKenyaEmr/ehrpharmacy",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;2.x&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ningosi/workspace/extendedKenyaEmr/ehrpharmacy&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/omod/src/main/webapp/resources/images/apps" />

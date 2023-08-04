@@ -62,7 +62,7 @@
                 });
                     jq('.stat-digit').eq(2).html(totalDispensed)
                     jq('.stat-digit').eq(3).html(totalPendingDispense)
-        })
+        });
         jq.getJSON('${ui.actionLink("pharmacyapp", "subStoreListDispense", "getDispenseAggregateSummary")}',
             {
                 "fromDate": summaryFromDate,
@@ -269,7 +269,7 @@ html, body, #graph-container {
                         <div class="col-md-4" id="dispense">
                             <div class="card-counter danger">
                                 <i class="icon-exchange"></i>
-                                <span class="count-name stat-text">Dispensed</span>
+                                <span class="count-name stat-text">Pending Dispensation</span>
                                 <span class="count-numbers stat-digit"></span>
                             </div>
                         </div>
@@ -277,7 +277,7 @@ html, body, #graph-container {
                         <div class="col-md-4" id="pending">
                             <div class="card-counter primary">
                                 <i class="icon-retweet"></i>
-                                <span class="count-name stat-text">Pending Dispensation</span>
+                                <span class="count-name stat-text">Dispensed</span>
                                 <span class="count-numbers stat-digit"></span>
                             </div>
                         </div>

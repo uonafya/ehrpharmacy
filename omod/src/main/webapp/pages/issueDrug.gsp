@@ -3,7 +3,7 @@
 	ui.includeJavascript("ehrcashier", "jq.print.js")
     ui.includeJavascript("ehrconfigs", "jquery-ui-1.9.2.custom.min.js")
     ui.includeJavascript("ehrconfigs", "underscore-min.js")
-    ui.includeJavascript("ehrconfigs", "knockout-3.4.0.js")
+    ui.includeJavascript("patientdashboardapp", "knockout-3.4.0.js")
     ui.includeJavascript("ehrconfigs", "emr.js")
     ui.includeCss("ehrconfigs", "jquery-ui-1.9.2.custom.min.css")
     // toastmessage plugin: https://github.com/akquinet/jquery-toastmessage-plugin/wiki
@@ -431,40 +431,38 @@
 
         });
 
-        jq("#searchPhrase").autocomplete({
-            minLength: 3,
-            source: function (request, response) {
-                jq.getJSON('${ ui.actionLink("pharmacyapp", "addReceiptsToStore", "fetchDrugListByName") }',
-                        {
-                            searchPhrase: request.term
-                        }
-                ).success(function (data) {
-                            var results = [];
-                            for (var i in data) {
-                                var result = {label: data[i].name, value: data[i]};
-                                results.push(result);
+        jq("#searchPhrase").on("focus.autocomplete", function () {
+            jq(this).autocomplete({
+                minLength: 3,
+                source: function (request, response) {
+                    jq.getJSON('${ ui.actionLink("pharmacyapp", "addReceiptsToStore", "fetchDrugListByName") }',
+                            {
+                                searchPhrase: request.term
                             }
-                            response(results);
-                        });
-            },
-            focus: function (event, ui) {
-                jq("#searchPhrase").val(ui.item.value.name);
-                return false;
-            },
-            select: function (event, ui) {
-                event.preventDefault();
-                jQuery("#searchPhrase").val(ui.item.value.name);
+                    ).success(function (data) {
+                                var results = [];
+                                for (var i in data) {
+                                    var result = {label: data[i].name, value: data[i]};
+                                    results.push(result);
+                                }
+                                response(results);
+                            });
+                },
+                select: function (event, ui) {
+                    event.preventDefault();
+                    jQuery("#searchPhrase").val(ui.item.value.name);
 
-                //set parent category
-                var catId = ui.item.value.category.id;
-                var drgId = ui.item.value.id;
-                jq("#issueDrugCategory").val(catId).change();
-                //set background drug name - frusemide
-                jq('#drugPatientName').val(drgId);
+                    //set parent category
+                    var catId = ui.item.value.category.id;
+                    var drgId = ui.item.value.id;
+                    jq("#issueDrugCategory").val(catId).change();
+                    //set background drug name - frusemide
+                    jq('#drugPatientName').val(drgId);
 
 
-            }
-        });
+                }
+            });
+         });
 
 
         issueList = new IssueViewModel();
@@ -884,25 +882,25 @@
                     <li>
                         <div id="drugKey">
                             <label for="searchPhrase">Drug Name</label>
-                            <input id="searchPhrase" name="searchPhrase"/>
+                            <input id="searchPhrase" name="searchPhrase" />
                         </div>
 
                         <div id="drugSelection">
                             <label for="drugPatientName">Drug Name</label>
-                            <select name="drugPatientName" id="drugPatientName"/>
+                            <select name="drugPatientName" id="drugPatientName">
 								<option value="0">Select Drug</option>
 							</select>
                         </div>
                     </li>
                     <li>
                         <label for="drugPatientFormulation">Formulation</label>
-                        <select name="drugPatientFormulation" id="drugPatientFormulation"/>
+                        <select name="drugPatientFormulation" id="drugPatientFormulation">
 							<option value="0">Select Formulation</option>
 						</select>
                     </li>
                     <li>
                         <label for="patientFrequency">Frequency</label>
-                        <select name="patientFrequency" id="patientFrequency"/>
+                        <select name="patientFrequency" id="patientFrequency">
                         <option value="0">Select Frequency</option>
                         <% drugFrequencyList.each { dfl -> %>
                         <option value="${dfl.conceptId}">${dfl.name}</option>
