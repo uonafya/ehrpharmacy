@@ -431,38 +431,55 @@
 
         });
 
-        jq("#searchPhrase").on("focus.autocomplete", function () {
-            jq(this).autocomplete({
-                minLength: 3,
-                source: function (request, response) {
-                    jq.getJSON('${ ui.actionLink("pharmacyapp", "addReceiptsToStore", "fetchDrugListByName") }',
-                            {
-                                searchPhrase: request.term
-                            }
-                    ).success(function (data) {
-                                var results = [];
-                                for (var i in data) {
-                                    var result = {label: data[i].name, value: data[i]};
-                                    results.push(result);
-                                }
-                                response(results);
-                            });
-                },
-                select: function (event, ui) {
-                    event.preventDefault();
-                    jQuery("#searchPhrase").val(ui.item.value.name);
+       jq("#searchPhrase").autocomplete({
+    minLength: 3,
+    source: function (request, response) {
+        jq.getJSON('${ ui.actionLink("pharmacyapp", "addReceiptsToStore", "fetchDrugListByName") }', {
+            searchPhrase: request.term
+        }).done(function (data) {
+            response(jq.map(data, function (item) {
+                return {
+                    label: item.name,
+                    value: item
+                };
+            }));
+        });
+    },
+    select: function (event, ui) {
+        jq(this).val(ui.item.label);
+        var catId = ui.item.value.category.id;
+        var drgId = ui.item.value.id;
+        jq("#issueDrugCategory").val(catId).change();
+        jq('#drugPatientName').val(drgId);
 
-                    //set parent category
-                    var catId = ui.item.value.category.id;
-                    var drgId = ui.item.value.id;
-                    jq("#issueDrugCategory").val(catId).change();
-                    //set background drug name - frusemide
-                    jq('#drugPatientName').val(drgId);
+        event.preventDefault();
+        jq("#searchPhrase").autocomplete("close");
+        jq("#issueDrugCategory").trigger("change");
+
+        return false;
+    }
+}).data("ui-autocomplete")._renderItem = function (ul, item) {
+    return jq("<li>")
+        .append("<div>" + item.label + "</div>")
+        .appendTo(ul)
+        .on("click", function () {
+            jq("#searchPhrase").val(item.label);
+            var catId = item.value.category.id;
+            var drgId = item.value.id;
 
 
-                }
-            });
-         });
+            jq("#issueDrugCategory").val(catId).change();
+            jq('#drugPatientName').val(drgId);
+            jq("#searchPhrase").autocomplete("close");
+            jq("#issueDrugCategory").trigger("change");
+
+            return false;
+        });
+};
+
+jq("#searchPhrase").on("autocompletefocus", function (event, ui) {
+    event.preventDefault();
+});
 
 
         issueList = new IssueViewModel();
