@@ -40,7 +40,6 @@
 		<kenyacoreVersion>3.0.1</kenyacoreVersion>
 		<ehrinventoryVersion>2.0.1-SNAPSHOT</ehrinventoryVersion>
 		<appuiVersion>1.8.0</appuiVersion>
-		<uilibraryVersion>2.0.4</uilibraryVersion>
 		<kenyaemrVersion>18.5.1</kenyaemrVersion>
 		<hospitalcoreVersion>2.0.3-SNAPSHOT</hospitalcoreVersion>
 		<appframeworkVersion>2.9</appframeworkVersion>
@@ -79,18 +78,6 @@
 				<artifactId>uiframework-api</artifactId>
 
 				<version>${uiframeworkVersion}</version>
-
-				<scope>provided</scope>
-
-			</dependency>
-
-			<dependency>
-
-				<groupId>org.openmrs.module</groupId>
-
-				<artifactId>uilibrary-api</artifactId>
-
-				<version>${uilibraryVersion}</version>
 
 				<scope>provided</scope>
 
