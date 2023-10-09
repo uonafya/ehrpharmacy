@@ -213,7 +213,7 @@ public class IssuePatientDrugFragmentController {
 
             InventoryStoreDrugTransactionDetail transactionDetail = inventoryService.getStoreDrugTransactionDetailById(object.getInt("id"));
 
-            transactionDetail.setFrequency(freCon.getName().getConcept());
+            transactionDetail.setFrequency(freCon);
             transactionDetail.setNoOfDays(noOfDays.intValue());
             transactionDetail.setComments(comments);
             InventoryStoreDrugPatientDetail issueDrugDetail = new InventoryStoreDrugPatientDetail();
